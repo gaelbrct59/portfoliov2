@@ -47,7 +47,7 @@ export class PresentationComponent implements OnInit {
     this.checkBox3 = <HTMLInputElement> document.getElementById("check3");
     this.checkBox4 = <HTMLInputElement> document.getElementById("check4");
 
-    if(document.documentElement.clientWidth < 400){
+    if(document.documentElement.clientWidth < 300){
       document.getElementById('phrase-presentation').style.top = document.documentElement.offsetHeight / 3 + "px";
       document.getElementById('phrase-presentation').style.left = "5px";
       document.getElementById('phrase-presentation').style.right = "5px";
@@ -122,7 +122,7 @@ export class PresentationComponent implements OnInit {
     // this.value="4";
     this.changeCheck("4");
     clearInterval(this.timer);
-    
+
     // this.checkBox1.checked=false;
     // this.checkBox2.checked=false;
     // this.checkBox3.checked=false;

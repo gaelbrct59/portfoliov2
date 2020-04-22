@@ -22,7 +22,7 @@
 
 #flechePresentation{
   position: absolute;
-  top: 88vh;
+  top: 82vh;
   left: 20vw;
   z-index: 2;
   clip-path: polygon(100% 40%, 100% 75%, 50% 100%, 0 75%, 0 40%, 50% 60%);
@@ -39,10 +39,10 @@
 
 @keyframes anim {
   from{
-    top: 88vh;
+    top: 82vh;
   }
   to{
-    top: 90vh;
+    top: 85vh;
     opacity: 0;
   }
 }
