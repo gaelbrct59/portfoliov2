@@ -50,7 +50,7 @@ export class BackgroundContainerComponent implements OnInit {
     var taillePage = window.pageYOffset;
 
     this.changeStyleTopBar();
-    this.background.style.opacity = 1 - taillePage/400 + '' ;
+    this.background.style.opacity = 0.80 - taillePage/400 + '' ;
     this.background.style.top = + taillePage +'px';
     this.background.style.backgroundPositionY = -+ taillePage/3 + 'px';
     // topbar_lien.style.opacity = taillePage/400 + ''
@@ -147,12 +147,12 @@ export class BackgroundContainerComponent implements OnInit {
       }
 
     }else{
-      topbar_lien.style.background="none";
+      topbar_lien.style.backgroundColor="rgba(255, 255, 255, 0.4)";
       topbar_lien.style.padding="5vmin 0px";
 
       for (let i = 0; i < links.length; i++) {
-        links[i].style.color="#656563";
-        links[i].style.padding="0.7vw";
+        links[i].style.color="#000";
+        links[i].style.padding="0.6vw";
         links[i].style.fontSize="calc(5px + 1.7vw)";
 
       }

@@ -6,17 +6,17 @@
   top: 0;
   left: 0;
   transition: 0.4s;
+  background-color: rgba(255, 255, 255, 0.4);
   z-index: 99;
 }
 
 #topbar-liens a {
   padding: 0.6vw;
   text-decoration: none;
-  color: #656563;
+  color: #000;
   font-size:calc(5px + 1.7vw);
   transition: 0.4s;
   border-radius: 3px;
-
 }
 
 #topbar-liens a:hover{

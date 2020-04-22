@@ -48,10 +48,12 @@ export class PresentationComponent implements OnInit {
     this.checkBox4 = <HTMLInputElement> document.getElementById("check4");
 
     if(document.documentElement.clientWidth < 400){
-      document.getElementById('phrase-presentation').style.top = document.documentElement.offsetHeight / 3 + "px";
-      document.getElementById('phrase-presentation').style.left = "5px";
-      document.getElementById('phrase-presentation').style.right = "5px";
-      document.getElementById('background').style.background = "none";
+      document.getElementById("flechePresentation").style.left = "10vw";
+      document.getElementById('background').style.backgroundSize = "180%";
+
+      // document.getElementById('phrase-presentation').style.top = document.documentElement.offsetHeight / 3 + "px";
+      // document.getElementById('phrase-presentation').style.left = "5px";
+      // document.getElementById('phrase-presentation').style.right = "5px";
     }
 
     var checks = document.getElementsByClassName('checkBoxesWH') as HTMLCollectionOf<HTMLInputElement>;
