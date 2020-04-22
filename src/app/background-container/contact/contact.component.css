@@ -1,0 +1,83 @@
+#container-contact{
+  background-color: #656563;
+  color: #C8D3DB;
+  padding-bottom: 5vh;
+  margin-top: -4.5vh;
+  background-image: url('../../../assets/img/fondEcranContact.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+#via-reseau{
+  margin-left: -10vw;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
+
+#containerGrow{
+  background-color: #007BB6;
+  border-radius: 10px;
+  width: 11vw;
+  height: 12vw;
+  transition: width 1s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#linkContact{
+  margin-left: 10vw;
+  vertical-align: 60%;
+  text-decoration: none;
+  color:#FFFFFF;
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+#containerGrowMail{
+  position: relative;
+  background-color: #F8DB10;
+  border-radius: 10px;
+  width: 11vw;
+  height: 12vw;
+  transition: width 1s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#containerGrowMail:hover{
+  width: 70vw;
+}
+#containerGrow:hover{
+  width: 70vw;
+}
+#mail{
+  vertical-align: 100%;
+  margin-left: 12vw;
+  color:#FFFFFF;
+  font-weight: bold;
+  font-size: 3.5vw;
+
+}
+
+#img{
+  height: 12vw;
+  width: 13vw;
+}
+
+#container-reseaux{
+  margin-left: -15vw;
+  transition: 1s;
+  opacity: 0;
+  transition-delay: 1.6s;
+}
+
+.rsx{
+  margin: 3vmin;
+}
+
+h3{
+  margin-left: 5vw;
+  font-family: 'Helvetica Neue', sans-serif;
+}

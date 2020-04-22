@@ -1,0 +1,68 @@
+#formation-container{
+  padding-bottom: 5vh;
+  /* background-color: #656563; */
+  color: #FFF;
+  width: 100vw;
+  background-image: url('../../../assets/img/fondEcranFormation.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+#formations {
+  /* position: relative; */
+  font-size:calc(5px + 1.5vw);
+  width: 75vw;
+}
+
+.formation{
+  position: relative;
+  /* display: flex;
+  float: right; */
+}
+
+#formations .formation {
+  left: -10vw;
+  opacity: 0;
+  transition-delay: 1500ms;
+}
+
+a{
+  text-decoration: none;
+  color: #87D6E7;
+}
+
+#formation1 {
+  transition: 2s;
+}
+#formation2 {
+  transition: 2.5s;
+}
+#formation3 {
+  transition: 3s;
+}
+#formation4 {
+  transition: 3.5s;
+}
+
+h3{
+  margin-left: -5vw;
+  color: #06127B;
+  font-size: calc(6px + 2vw);
+
+}
+
+#dessin-formations{
+  display: flex;
+  flex-direction: row;
+}
+
+#dessin {
+  position: absolute;
+  transition-duration: 1s;
+  height: 0;
+  width: 1px;
+  background-color: #87D6E7;
+  left: 12vw;
+}

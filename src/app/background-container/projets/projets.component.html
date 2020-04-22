@@ -1,0 +1,213 @@
+<!-- <div id="projets"></div> -->
+<div id="container-projets">
+  <canvas id="canvas"></canvas>
+  <h1 id="projet">Projets</h1>
+
+  <div id="barre-projet">
+    <div id="projets-perso" class="barre-projet-content">
+      Personnels
+    </div>
+
+    <div id="projets-cours" class="barre-projet-content">
+      Professionnels
+    </div>
+
+    <div class="barre-projet-content" id="projets-tout">
+      Tout afficher
+    </div>
+  </div>
+
+  <div id="projets">
+    <div class="projet perso" id="projet-II2D">
+      <img src="../../../assets/img/imgII2D.png">
+      <div class="titre-projet">
+        Projet II2D - Intéraction avec la musique
+      </div>
+    </div>
+
+    <div class="projet perso" id="projet-react">
+      <img src="../../../assets/img/logoGB.png">
+      <div class="titre-projet">
+        Portfolio 1.0 - Apprentissage ReactJS
+      </div>
+    </div>
+
+    <div class="projet professionnel" id="stage2018">
+      <img src="../../../assets/img/imgStage1.png">
+      <div class="titre-projet">
+        Stage 2 01/2018- Centre Social Lazare Garreau
+      </div>
+    </div>
+
+    <div class="projet professionnel" id="stage2017">
+      <img src="../../../assets/img/imgStage2.png">
+      <div class="titre-projet">
+        Stage 1 05/2017- Centre Social Lazare Garreau
+      </div>
+    </div>
+
+  </div>
+
+  <h3 id="pres-git">Pour en savoir plus sur mes projets, ou en voir d'autres, voici mon github :</h3>
+  <div id="anim-chat">
+    <div id="containerGrowGIT">
+      <img src="../../../assets/img/logoGit.png" id="imgGit"/>
+      <a href="https://github.com/gaelbrct59?tab=repositories" target = "_blank" id="gitLinkToAppear"> gaelbrct59 </a>
+    </div>
+  </div>
+
+</div>
+
+<div class="modal" id="modalStage2018">
+  <div class="modal-content">
+    <header>
+      <div class="close-modal" id="close-modal">
+        <div id="p">X</div>
+      </div>
+      <h2>Stage au centre Social et Culturel Lazare Garreau - 2018</h2>
+    </header>
+    <div>
+      <h3> Developpement d'une borne d'acceuil pour les utilisateurs du centre, et y ajouter des statistiques de clics </h3>
+      <p> Voir le cahier des charges : </p>
+      <iframe src="../../../assets/img/cdc.pdf" width='100%' height='400'></iframe>
+
+
+      <h3> Solution choisie : </h3>
+      <div id="presentationExperience">
+        Nous avons choisi de reprendre le code de l'année précédente, que j'ai fait sur Visual Basic, d'une part car :
+        <ul>
+          <li>Les solutions proposées par ce langages permettent d'effectuer les contraintes du cahier des charges (empêcher l'utilisateurs d'accéder a d'autres sites, et empêcher la possibilité de quitter l'application (avec alt+f4 par exemple))</li>
+          <li>C'est le premier langage de programmation appris, et maitrisé suite a nos études</li>
+        </ul>
+        De plus, nous avons décidé de diviser le problème en deux :
+        <ul>
+          <li>La solution exécutable, qui va permettre d'obliger l'utilisateur d'accéder aux sites prédéfinis (voir image ci-dessous)</li>
+          <li>La solution Front-end, avec HTML/CSS, lié au PHP qui va permettre de compter le nombre de clics sur les sites en questions, afin de proposer a notre tuteur des statistiques d'accès a ces sites</li>
+        </ul>
+        <br />
+        J'ai décidé de procéder de la sorte : Créer une application executable (en VB) qui permettait de controler la navigation (Grace au WebBrowser, un genre de iframe), et un bouton qui permettait de revenir a l'accueil.
+        <br />
+        Cette application bloque l'accès a la barre de recherche (pas le droit d'accéder a des sites différents de ceux proposés) et l'application ne peut être fermée. De plus, a l'allumage de la machine, l'application se lance directement, et en plein écran.
+      </div>
+      <h3>Version executable : </h3>
+      <img src="../../../assets/img/VB2018.PNG" />
+      <img src="../../../assets/img/IHMVB2018.PNG" />
+
+      <h3>Version Front-end : </h3>
+      <img src="../../../assets/img/fondCSLG2018.png" />
+
+      <h3>Version finale et fonctionnelle : </h3>
+      <img src="../../../assets/img/versionFinaleCSLG2018.png" />
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="modal" id="modalStage2017">
+  <div class="modal-content">
+      <div class="close-modal" id="close-modal">
+        <div id="p">X</div>
+      </div>
+      <header>
+        <h2>Stage au centre Social et Culturel Lazare Garreau - 2017</h2>
+      </header>
+      <div>
+        <h3> Solution de sauvegarde pour l'établissement, et developpement d'une borne d'acceuil pour les utilisateurs du centre</h3>
+        <div id="presentationExperience">
+          Ma première mission était de proposer une solution de sauvegarde pour le personnel du centre. Pour cela, j'ai eu une machine vierge, sur laquelle j'ai dû installer Linux, ainsi que la solution de sauvegarde demandée. Linux a été choisi pour la sécurité des données.
+        </div>
+        <h3> Extrait d'un journal de travail : </h3>
+        <div id="presentationExperience">
+          <h4>JOUR 4</h4>
+
+          Formater sa machine en linux (Debian version serveur)<br />
+          <ul>
+            <li> Disque dur vierge, l'installation va supprimer les données du disque dur.</li>
+            <li> Télécharger une image cd de linux (http://www.ubuntu-fr.org/telechargement).</li>
+            <li> Enregistrer</li>
+            <li> Vérifier l'intégrité de l'image ISO téléchargée (Télécharger WinMD5)</li>
+            <li> Décompressez l'archive téléchargée.</li>
+            <li> Exécutez WinMD5 en double cliquant sur le fichier WinMD5.exe.</li>
+            <li> Cliquez sur le bouton ….</li>
+            <li> Sélectionnez le fichier ubuntu-9.10-desktop-xxx.iso correspondant à l'image ISO du CD
+            d'Ubuntu que vous avez téléchargée et cliquez sur le bouton Ouvrir.</li>
+            <li> L'empreinte MD5 du fichier est alors calculée et affichée.</li>
+            <li> Rendez-vous sur la liste des empreintes MD5 d'Ubuntu en cliquant ici.</li>
+            <li> Sélectionnez et copiez (Ctrl + C) l'empreinte correspondant au fichier que vous avez
+            téléchargé.</li>
+            <li> Si les images sont différentes, il faut réinstaller une image iso</li>
+            <li> Graver un CD ou DVD vierge</li>
+            <li> Booter sur le CD</li>
+            <li> Insérez le CD d'Ubuntu dans votre lecteur.</li>
+            <li> Redémarrez votre ordinateur.</li>
+            <li> Au démarrage, appuyez sur la touche d'accès au BIOS, généralement Suppr, parfois F1
+            ou F2 selon les marques.</li>
+            <li> Repérez la section relative à la séquence de démarrage, Hard Disk Boot Priority dans la rubrique Advanced BIOS Features ou Boot par exemple.</li>
+            <li> A l'aide des flèches de direction et des touches + et -, placez le lecteur de CD/DVD en
+            haut de la liste.</li>
+            <li> Enregistrez vos modifications en pressant la touche F10. Validez par Y ou OK. Pressez
+            enfin la touche Entrée.</li>
+            <li> Votre ordinateur démarre alors sur le CD.</li>
+          </ul>
+          Pour avoir KDE sous linux (graphique), on peut télécharger Kubuntu, qui nous donnera directement
+          le bureau version KDE. Pour le serveur ensuite, il faudra télécharger un logiciel (type MySQL,
+          BackupPC, ultra Backup ou autre)<br />
+          Sinon, sous debian, il faudra utiliser cette commande :<br />
+          apt-get install kde-i18n-fr<br />
+
+          sudo apt-get uptate<br />
+          sudo apt-get install kde-plasma-desktop<br />
+
+        </div>
+        <h3> Choix de la technologie : </h3>
+        <div id="presentationExperience">
+          Après étude des besoins et discussion avec le tuteur, j'ai décidé d'utiliser le logiciel BackupPC, voici
+          les principales explications :<br />
+          BackupPC est un logiciel Open Source écrit en langage PERL qui permet de gérer les sauvegardes
+          de différents postes, qu'ils soient sous Linux, Windows ou MacOS.<br />
+          BackupPC permet de sauvegarder automatiquement (et manuellement), à des intervalles de temps
+          réguliers, des répertoires situés sur des machines du réseau. Il possède une interface Web pour
+          lancer des sauvegardes ou restaurer des fichiers.<br />
+          De plus, le tuteur de stage souhaite pouvoir être averti en cas de problème lors de la sauvegarde.
+          C'est là que BackupPC intervient, puisqu'une notification par email est prévue dans deux cas :
+          <ul>
+            <li> Si une erreur considérée comme grave par le serveur s'est produite, l'administrateur est
+            averti par mail.</li>
+            <li> Si un utilisateur n'a pas fait de sauvegarde depuis trop longtemps (paramètre à définir),
+            le serveur lui envoie un mail pour l'avertir.</li>
+          </ul>
+          Principaux avantages de BackupPC :
+          <ul>
+
+            <li> Interface Web facile à assimiler</li>
+            <li> Disponible sous Linux</li>
+            <li> Protocole smb (contrôle a distance) disponible</li>
+            <li> Gère différents systèmes d'exploitations</li>
+            <li> Préviens si un problème survient.</li>
+            <li> Bonne gestion des périodes de Blackout, des délais de sauvegardes complètes</li>
+          </ul>
+        </div>
+        <h2> Développement d'une application de borne d'acceuil pour les utilisateurs du centre </h2>
+        <div id="presentationExperience">
+          J'ai eu comme seconde mission, de restaurer, et créer une meilleure application pour la borne d'acceuil tactile du centre, a l'entrée, afin de faciliter l'accès aux sites aux utilisateurs.
+          <br />
+          Pour cela, j'ai utilisé la technologie Visual Basic, car celle-ci permettait de faire ce qu'on me demandait, et que c'est le seul langage de programmation appris a ce moment là.
+          <br />
+          J'avais a disposition le format HTML/CSS voulu, en fond de l'application.
+          <br />
+          J'ai décidé de procéder de la sorte : Créer une application executable (en VB) qui permettait de controler la navigation (Grace au WebBrowser, un genre de iframe), et un bouton qui permettait de revenir a l'accueil.
+          <br />
+          Cette application bloque l'accès a la barre de recherche (pas le droit d'accéder a des sites différents de ceux proposés) et l'application ne peut être fermée. De plus, a l'allumage de la machine, l'application se lance directement, et en plein écran.
+        </div>
+
+        <h3> Fond html/css donné : </h3>
+        <img src="../../../assets/img/html2017.png" />
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,218 @@
+#container-projets{
+  position: relative;
+  color: #656563;
+  padding-bottom: 4vh;
+  margin-top: -4vh;
+}
+
+h3{
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+#projet{
+  position: relative;
+
+}
+
+#canvas{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+#projets{
+  padding-bottom: 7vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 0.5s;
+
+  justify-content: center;
+
+}
+
+#pres-git{
+  margin-right: 5vw;
+  font-size: calc(9px + 1vw);
+  margin-left: -5vw;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 1s;
+  position: relative;
+}
+
+.projet {
+  /* opacity: 0; */
+  margin: 1vw;
+  border: solid;
+  border-radius: 20px;
+  height: calc(250px + 10vw);
+  width: calc(130px + 10vw);
+  overflow: hidden;
+  font-size: 0;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.58);
+}
+
+.projet:hover{
+  box-shadow: 1px 1px 6px 5px rgba(0,0,0,0.58);
+}
+
+.projet .titre-projet{
+  position: relative;
+  text-align: center;
+  background-color: #1E2987;
+  color: #E7ECEF;
+  font-size: calc(7px + 2vmin);
+  height: 30%;
+  z-index: 9;
+  padding: 10px;
+}
+
+.projet img{
+  position: relative;
+  transition: 1s;
+  height: 70%;
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+.projet:hover > img {
+  transform: scale(1.1);
+  filter: none;
+}
+
+.modal{
+  position: fixed; /* Stay in place */
+  z-index: 199; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  overscroll-behavior-y: contain;
+}
+
+.modal-content{
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 3vmin;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 15px;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+#anim-chat{
+  margin-left: -10vw;
+  transition: 1s;
+  transition-delay: 1.5s;
+  opacity: 0;
+}
+
+#modalStage2018{
+  display: none;
+}
+
+#modalStage2017{
+  display: none;
+}
+
+.modal-content img{
+  width: 100%;
+}
+
+.modal .close-modal{
+  position: absolute;
+  right: 15vw;
+  border: solid;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  padding: 1px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #FFF;
+  transition: 0.4s;
+}
+.modal .close-modal #p{
+  transition:transform .8s ease-in-out;
+}
+
+.modal .close-modal:hover > #p{
+  transform: rotate(360deg);
+}
+
+.modal .close-modal:hover {
+  transform: scale(1.2);
+  color: #800000;
+}
+
+#barre-projet{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 20vh; */
+  opacity: 0;
+  transition: 2s;
+  transition-delay: 1.5s;
+}
+
+#barre-projet .barre-projet-content{
+  margin: 1vmin;
+  cursor: pointer;
+  font-size: calc(6px + 2vw);
+}
+
+
+
+#barre-projet .barre-projet-content:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0;
+    transition: width .5s ease, background-color .5s ease;
+}
+#barre-projet .barre-projet-content:hover:after {
+    width: 90%;
+    background: #444;
+}
+
+#containerGrowGIT{
+  position: relative;
+  background-color: #171515;
+  border-radius: 5vw;
+  width: 10vw;
+  height: 10vw;
+  transition: width 1s;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 5vw;
+}
+#containerGrowGIT:hover{
+  width: 70vw;
+}
+#containerGrowGIT:hover > #imgGit{
+  transform: translateX(60vw) rotate(720deg);
+}
+#gitLinkToAppear{
+  margin-left: 10vw;
+  vertical-align: 65%;
+  text-decoration: none;
+  color:#FFFFFF;
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+#imgGit{
+  height: 10.3vw;
+  width: 10.3vw;
+  transition-property: transform;
+  transition-duration: 1s;
+}

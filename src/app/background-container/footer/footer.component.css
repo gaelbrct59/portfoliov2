@@ -1,0 +1,122 @@
+#container-footer{
+  background-color: #1E2023;
+  color: #FFF;
+  margin-top: -5vh;
+  /* padding-bottom: 5vh; */
+}
+
+.modal{
+  position: fixed; /* Stay in place */
+  z-index: 199; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  overscroll-behavior-y: contain;
+}
+
+.modal-content{
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 3vmin;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 15px;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+#modalCV{
+  display: none;
+}
+
+.modal .close-modal{
+  position: absolute;
+  right: 15vw;
+  border: solid;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  padding: 1px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #FFF;
+  transition: 0.4s;
+  color: #000;
+}
+.modal .close-modal #p{
+  transition:transform .8s ease-in-out;
+}
+
+.modal .close-modal:hover > #p{
+  transform: rotate(360deg);
+}
+
+.modal .close-modal:hover {
+  transform: scale(1.2);
+  color: #800000;
+}
+
+#footer-pres{
+
+  /* width: 100%; */
+  border-bottom: solid;
+  border-width: 1px;
+
+  font-size: calc(10px + 1.5vw);
+
+}
+
+.content-footer{
+  padding: 3vmin;
+  border-right: solid;
+  border-width: 0.5px;
+}
+
+.btn{
+  display: inline-block;
+  border: solid;
+  text-decoration: none;
+  text-align: center;
+  top:1vw;
+  padding: 1.5vmin;
+  color: #FFFFFF;
+  border-radius: 50px;
+  border-width: 1px;
+  cursor: pointer;
+  margin: 3vmin;
+}
+
+
+#contenuExperience .btn:hover{
+  animation: animationBtn 1s linear alternate infinite;
+}
+
+@keyframes animationBtn {
+  from {
+    background-color: black;
+    border-radius: 50px;
+  }
+  to {
+
+    background-color: white;
+    color:black;
+
+  }
+}
+
+#container-all-footer{
+  padding-bottom: 7vh;
+  position: relative;
+  display: flex;
+  transition: 0.5s;
+  font-size: calc(6px + 1vw);
+}
+
+#container-cv{
+  width: 40vw;
+
+}

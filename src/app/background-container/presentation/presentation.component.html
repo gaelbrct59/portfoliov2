@@ -1,0 +1,46 @@
+
+<!-- <div id="container-presentation"> -->
+  <div [@switchPresentations]="value" id="phrase-de-presentation">
+    <!-- <a href="#pres3">test</a> -->
+     <div id="pres1" class="pres">
+       Je m’appelle Gaël BRICOUT et je suis un étudiant de 22ans
+       en troisième année de Licence informatique à l’université de Lille.
+     </div>
+     <div id="pres2" class="pres">
+       Passionné par l'informatique, et plus particulièrement, depuis quelques années,
+       par le développement, j'aimerais orienter mon avenir dans les métiers du E-services
+       (le Front-end, les IHM, le développement mobile) et développeur full-stack.
+     </div>
+     <div id="pres3" class="pres">
+      Je suis quelqu'un de créatif, passionné et déterminé. J'aime mener mes projets à terme,
+      jusqu'à obtenir le résultat le plus parfait et abouti, possible.
+     </div>
+     <div id="pres4" class="pres">Ce portefolio est réalisé exclusivement dans le but de m'entrainer, et
+       d'apprendre de nouveaux langages. Il s'agit là d'un site qui me sert d'outil avant tout,
+       qui est donc largement suceptible de changer et d'être modifié. Il a été réalisé entièrement en AngularJS/HTML/CSS.
+     </div>
+
+   </div>
+   <div id="checkBox-pres">
+     <input (click)="toggle1()" type="radio" id="check1" class="checkBoxesWH" checked="checked" />
+     <input (click)="toggle2()" type="radio" id="check2" class="checkBoxesWH" />
+     <input (click)="toggle3()" type="radio" id="check3" class="checkBoxesWH" />
+     <input (click)="toggle4()" type="radio" id="check4" class="checkBoxesWH" />
+   </div>
+
+<h1>Compétences</h1>
+
+<div id="container-competences">
+  <div id="barreProgressionVide">
+    <div class="remplissage" id="a75">Confirmé</div>
+    <div id="contenuCompetences">Java | Photofiltre | HTML | CSS | JS | Python | SQL</div>
+  </div>
+  <div id="barreProgressionVide">
+    <div class="remplissage" id="a50">Apprenti</div>
+    <div id="contenuCompetences">PHP | Visual Basic | C# | React | Angular | Photoshop</div>
+  </div>
+  <div id="barreProgressionVide">
+    <div class="remplissage" id="a25">Notions</div>
+    <div id="contenuCompetences">AMPL | C | Haskell | Prolog</div>
+  </div>
+</div>
