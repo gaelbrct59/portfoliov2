@@ -16,7 +16,6 @@
   color: #000;
   font-size:calc(5px + 1.7vw);
   transition: 0.4s;
-  border-radius: 3px;
 }
 
 #topbar-liens a:hover{

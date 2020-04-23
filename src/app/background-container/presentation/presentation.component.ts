@@ -50,6 +50,7 @@ export class PresentationComponent implements OnInit {
     if(document.documentElement.clientWidth < 400){
       document.getElementById("flechePresentation").style.left = "10vw";
       document.getElementById('background').style.backgroundSize = "185%";
+      document.getElementById('checkBox-pres').style.paddingBottom = "30vh";
 
 
       document.getElementById('phrase-presentation').style.top = "50vh";
