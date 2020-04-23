@@ -49,11 +49,12 @@ export class PresentationComponent implements OnInit {
 
     if(document.documentElement.clientWidth < 400){
       document.getElementById("flechePresentation").style.left = "10vw";
-      document.getElementById('background').style.backgroundSize = "180%";
+      document.getElementById('background').style.backgroundSize = "185%";
 
-      // document.getElementById('phrase-presentation').style.top = document.documentElement.offsetHeight / 3 + "px";
-      // document.getElementById('phrase-presentation').style.left = "5px";
-      // document.getElementById('phrase-presentation').style.right = "5px";
+
+      document.getElementById('phrase-presentation').style.top = "50vh";
+      document.getElementById('phrase-presentation').style.left = "5px";
+      document.getElementById('phrase-presentation').style.right = "5px";
     }
 
     var checks = document.getElementsByClassName('checkBoxesWH') as HTMLCollectionOf<HTMLInputElement>;

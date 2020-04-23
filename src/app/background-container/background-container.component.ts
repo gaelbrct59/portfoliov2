@@ -13,7 +13,7 @@ import { PresentationComponent } from './presentation/presentation.component';
   animations: [
     trigger('test', [
         state('active', style({ opacity:"1" })),
-        transition('* => active', animate("3000ms"))
+        transition('* => active', animate("5000ms"))
     ])
   ]
 })
