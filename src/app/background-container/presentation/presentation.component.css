@@ -7,8 +7,9 @@
   text-align: center;
   padding-bottom: 1vh;
   font-size: calc(5px + 2vw);
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #656563;
+  font-family: 'Optima', sans-serif;
 }
 
 

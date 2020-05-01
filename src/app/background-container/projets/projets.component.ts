@@ -18,9 +18,9 @@ export class ProjetsComponent implements OnInit {
     document.getElementById("projet-react").addEventListener("click", this.openlinkreact, true);
     document.getElementById("stage2018").addEventListener("click", this.modalStage2018, true);
     document.getElementById("stage2017").addEventListener("click", this.modalStage2017, true);
-    document.getElementById("projets-perso").addEventListener("click", this.triPP, true);
-    document.getElementById("projets-cours").addEventListener("click", this.triPC, true);
-    document.getElementById("projets-tout").addEventListener("click", this.triAll, true);
+    document.getElementById("barre-projet").addEventListener("click", this.toggle, true);
+    // document.getElementById("projets-cours").addEventListener("click", this.toggle, true);
+    // document.getElementById("projets-tout").addEventListener("click", this.toggle, true);
 
     var closemodals = document.getElementsByClassName("close-modal");
     for (let i = 0; i < closemodals.length; i++) {
@@ -66,44 +66,67 @@ export class ProjetsComponent implements OnInit {
     }
   }
 
-  triPP(){
+  toggle(event): void{
+    // console.log(event.target);
     var persos = document.getElementsByClassName("perso") as HTMLCollectionOf<HTMLElement>;
     var cours = document.getElementsByClassName("professionnel") as HTMLCollectionOf<HTMLElement>;
+    var projets = document.getElementsByClassName("projet") as HTMLCollectionOf<HTMLElement>;
 
-    for (let i = 0; i < persos.length; i++) {
-      persos[i].style.display = "block";
+    function dispPersos (){
+      for (let i = 0; i < persos.length; i++) {
+        persos[i].style.height = "calc(220px + 10vw)";
+        persos[i].style.width = "calc(130px + 10vw)";
+        persos[i].style.border = "solid";
+        persos[i].style.margin = "1vw";
+        persos[i].style.boxShadow = "1px 1px 15px 5px rgba(0,0,0,0.58)";
+      }
+
+      for (let i = 0; i < cours.length; i++) {
+        cours[i].style.height = "0";
+        cours[i].style.width = "0";
+        cours[i].style.border = "none";
+        cours[i].style.margin = "0";
+        cours[i].style.boxShadow = "none";
+      }
     }
 
-    for (let i = 0; i < cours.length; i++) {
-      cours[i].style.display = "none";
+    function dispProf(){
+      for (let i = 0; i < persos.length; i++) {
+        persos[i].style.height = "0";
+        persos[i].style.width = "0";
+        persos[i].style.margin = "0";
+        persos[i].style.border = "none";
+        persos[i].style.boxShadow = "none";
+      }
+
+      for (let i = 0; i < cours.length; i++) {
+        cours[i].style.height = "calc(220px + 10vw)";
+        cours[i].style.width = "calc(130px + 10vw)";
+        cours[i].style.border = "solid";
+        cours[i].style.margin = "1vw";
+        cours[i].style.boxShadow = "1px 1px 15px 5px rgba(0,0,0,0.58)";
+
+      }
     }
 
+    function toutAfficher(){
+      for (let i = 0; i < projets.length; i++) {
+        projets[i].style.height = "calc(220px + 10vw)";
+        projets[i].style.width = "calc(130px + 10vw)";
+        projets[i].style.border = "solid";
+        projets[i].style.margin = "1vw";
+        projets[i].style.boxShadow = "1px 1px 15px 5px rgba(0,0,0,0.58)";
+      }
+    }
+
+    if(event.target.id == "projets-perso"){
+      dispPersos();
+    }else if(event.target.id == "projets-cours"){
+      dispProf();
+    }else{
+      toutAfficher();
+    }
   }
-  triPC(){
-    var persos = document.getElementsByClassName("perso") as HTMLCollectionOf<HTMLElement>;
-    var cours = document.getElementsByClassName("professionnel") as HTMLCollectionOf<HTMLElement>;
 
-    for (let i = 0; i < persos.length; i++) {
-      persos[i].style.display = "none";
-    }
-
-    for (let i = 0; i < cours.length; i++) {
-      cours[i].style.display = "block";
-    }
-  }
-
-  triAll(){
-    var persos = document.getElementsByClassName("perso") as HTMLCollectionOf<HTMLElement>;
-    var cours = document.getElementsByClassName("professionnel") as HTMLCollectionOf<HTMLElement>;
-
-    for (let i = 0; i < persos.length; i++) {
-      persos[i].style.display = "block";
-    }
-
-    for (let i = 0; i < cours.length; i++) {
-      cours[i].style.display = "block";
-    }
-
-  }
 
 }

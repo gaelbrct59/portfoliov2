@@ -47,12 +47,12 @@ h3{
   margin: 1vw;
   border: solid;
   border-radius: 20px;
-  height: calc(250px + 10vw);
+  height: calc(220px + 10vw);
   width: calc(130px + 10vw);
   overflow: hidden;
   font-size: 0;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 1s;
   box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.58);
 }
 
