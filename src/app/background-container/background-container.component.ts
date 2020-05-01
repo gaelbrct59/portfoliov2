@@ -32,6 +32,7 @@ export class BackgroundContainerComponent implements OnInit {
     window.addEventListener('scroll', this.scroll, true);
     this.value="active";
     this.background = document.getElementById("background");
+    
 
 
   }
@@ -70,6 +71,7 @@ export class BackgroundContainerComponent implements OnInit {
     }
 
     if (taillePage > document.getElementById("barreProgressionVide").offsetTop) {
+      var contenusComp = document.getElementsByClassName("contenuComp") as HTMLCollectionOf<HTMLElement>;
       var rempl = document.getElementsByClassName("remplissage") as HTMLCollectionOf<HTMLElement>;
       for (let i = 0; i < rempl.length; i++){
 
@@ -79,6 +81,16 @@ export class BackgroundContainerComponent implements OnInit {
       document.getElementById("a25").style.width = "25%";
       document.getElementById("a50").style.width = "50%";
       document.getElementById("a75").style.width = "75%";
+
+      for (let i = 0; i < contenusComp.length; i++) {
+        contenusComp[i].style.marginTop = "1vmin";
+        contenusComp[i].style.opacity = "1";
+
+      }
+
+      // document.getElementsByClassName("contenuComp").marginTop = "1vmin";
+      // document.getElementsByClassName("contenuComp").opacity = "1";
+
     }
 
     if (taillePage > document.getElementById("formations").offsetTop + 10) {
@@ -115,7 +127,11 @@ export class BackgroundContainerComponent implements OnInit {
   animateProjets(){
     // document.getElementById("barre-projet").style.marginTop = "0";
     document.getElementById("barre-projet").style.opacity = "1";
+    const imgs = document.getElementsByTagName("img") as HTMLCollectionOf<HTMLElement>;
+    for (let i = 0; i < imgs.length; i++) {
+      imgs[i].style.marginLeft = "0";
 
+    }
     // var projets = document.getElementsByClassName("projet") as HTMLCollectionOf<HTMLElement>;
 
     // for (let i = 0; i < document.getElementsByClassName("projet").length; i++) {

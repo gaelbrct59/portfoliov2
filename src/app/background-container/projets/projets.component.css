@@ -121,8 +121,10 @@ h3{
   display: none;
 }
 
-.modal-content img{
-  width: 100%;
+
+img{
+  margin-left: -50vw;
+  transition: 1s;
 }
 
 .modal .close-modal{
