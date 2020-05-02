@@ -32,7 +32,7 @@ export class BackgroundContainerComponent implements OnInit {
     window.addEventListener('scroll', this.scroll, true);
     this.value="active";
     this.background = document.getElementById("background");
-    
+
 
 
   }
@@ -51,9 +51,9 @@ export class BackgroundContainerComponent implements OnInit {
     var taillePage = window.pageYOffset;
 
     this.changeStyleTopBar();
-    this.background.style.opacity = 0.80 - taillePage/400 + '' ;
+    this.background.style.opacity = 0.80 - taillePage/450 + '' ;
     this.background.style.top = + taillePage +'px';
-    this.background.style.backgroundPositionY = -+ taillePage/3 + 'px';
+    this.background.style.backgroundPositionY = -+ taillePage/4.5 + 'px';
     // topbar_lien.style.opacity = taillePage/400 + ''
     document.getElementById("formation-container").style.top = + taillePage +'px';
     document.getElementById("formation-container").style.backgroundPositionY = -+ taillePage *2 + 'px';

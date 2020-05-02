@@ -79,6 +79,8 @@ export class ProjetsComponent implements OnInit {
         persos[i].style.border = "solid";
         persos[i].style.margin = "1vw";
         persos[i].style.boxShadow = "1px 1px 15px 5px rgba(0,0,0,0.58)";
+        persos[i].style.opacity = "1";
+
       }
 
       for (let i = 0; i < cours.length; i++) {
@@ -87,6 +89,7 @@ export class ProjetsComponent implements OnInit {
         cours[i].style.border = "none";
         cours[i].style.margin = "0";
         cours[i].style.boxShadow = "none";
+        cours[i].style.opacity = "0";
       }
     }
 
@@ -97,6 +100,7 @@ export class ProjetsComponent implements OnInit {
         persos[i].style.margin = "0";
         persos[i].style.border = "none";
         persos[i].style.boxShadow = "none";
+        persos[i].style.opacity = "0";
       }
 
       for (let i = 0; i < cours.length; i++) {
@@ -105,6 +109,7 @@ export class ProjetsComponent implements OnInit {
         cours[i].style.border = "solid";
         cours[i].style.margin = "1vw";
         cours[i].style.boxShadow = "1px 1px 15px 5px rgba(0,0,0,0.58)";
+        cours[i].style.opacity = "1";
 
       }
     }
@@ -116,6 +121,7 @@ export class ProjetsComponent implements OnInit {
         projets[i].style.border = "solid";
         projets[i].style.margin = "1vw";
         projets[i].style.boxShadow = "1px 1px 15px 5px rgba(0,0,0,0.58)";
+        projets[i].style.opacity = "1";
       }
     }
 

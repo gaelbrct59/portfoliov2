@@ -6,7 +6,7 @@
   opacity:0;
   text-align: center;
   padding-bottom: 1vh;
-  font-size: calc(5px + 2vw);
+  font-size: calc(8px + 4vw);
   /* font-weight: bold; */
   color: #656563;
   font-family: 'Optima', sans-serif;
@@ -25,7 +25,7 @@
 #barreProgressionVide{
   position: relative;
   width:80vw;
-  margin-bottom: 9VH;
+  margin-bottom:9VH;
   margin-top: 7VH;
   font-size: 2.5vmin;
 	background:#87D6DF;
@@ -94,7 +94,7 @@
   border-radius: 20px;
   display: flex;
   width: 100vw;
-  padding-bottom: 40vh;
+  padding-bottom: calc(10px + 80vh);
   padding-top: 10vh;
 }
 
@@ -116,7 +116,8 @@
 }
 
 .checkBoxesWH:hover{
-  
+  transform: scale(1.1);
+background-color: #656563;
 }
 
 
