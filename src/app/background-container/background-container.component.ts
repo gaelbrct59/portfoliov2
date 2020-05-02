@@ -75,6 +75,7 @@ export class BackgroundContainerComponent implements OnInit {
     }
 
     if (taillePage > document.getElementById("formations").offsetTop + 10) {
+      document.getElementById("formation").style.bottom = "0";
       document.getElementById("formation").style.animation = "appear 2s";
       this.animateFormation();
     }
@@ -101,6 +102,7 @@ export class BackgroundContainerComponent implements OnInit {
     }
 
     if (taillePage > document.getElementById("container-footer").offsetTop ){
+      document.getElementById("footer-pres").style.bottom = "0";
       document.getElementById("footer-pres").style.animation = "appear 2s";
     }
 
@@ -119,6 +121,7 @@ export class BackgroundContainerComponent implements OnInit {
     document.getElementById("via-reseau").style.animation = "write 2s steps(17)"
     document.getElementById("via-reseau").style.width = "15.5ch";
     document.getElementById("contact").style.animation = "appear 2s";
+    document.getElementById("contact").style.bottom = "0";
 
     document.getElementById("container-reseaux").style.marginLeft = "15vw";
     document.getElementById("container-reseaux").style.opacity = "1";
@@ -142,6 +145,7 @@ export class BackgroundContainerComponent implements OnInit {
 
   animateComp(){
     document.getElementById("competence").style.animation = "appear 2s";
+    document.getElementById("competence").style.bottom = "0";
 
     var contenusComp = document.getElementsByClassName("contenuComp") as HTMLCollectionOf<HTMLElement>;
     var rempl = document.getElementsByClassName("remplissage") as HTMLCollectionOf<HTMLElement>;

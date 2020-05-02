@@ -16,7 +16,7 @@
 #competence{
   position: relative;
   font-size: calc(15px + 3vw);
-  bottom: 0;
+  bottom: -50vh;
   height: 1ch;
   /* animation: appear 2s; */
 }
