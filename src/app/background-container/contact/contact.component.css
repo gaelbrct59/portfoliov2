@@ -14,13 +14,6 @@
   font-size: calc(25px + 3vw);
 }
 
-#via-reseau{
-  margin-left: -10vw;
-  opacity: 0;
-  transition: 1s;
-  transition-delay: 1s;
-}
-
 #containerGrow{
   background-color: #007BB6;
   border-radius: 10px;
@@ -85,4 +78,28 @@
 h3{
   margin-left: 5vw;
   font-family: 'Helvetica Neue', sans-serif;
+  /* opacity: 0; */
+  transition: 1s;
+  transition-delay: 1s;
+  /* animation: write 2s steps(17); */
+  overflow: hidden;
+  white-space: nowrap;
+  /* width: 15.5ch; */
+  width: 0;
+}
+
+@keyframes write {
+  from{
+    border-right: 2px solid;
+    width: 0;
+  }
+  to{
+    width: 15ch;
+    border-right: 2px solid;
+  }
+}
+
+#via-site{
+  animation-delay: 2s;
+  border-right: 2px solid;
 }

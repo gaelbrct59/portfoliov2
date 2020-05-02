@@ -114,15 +114,30 @@ export class BackgroundContainerComponent implements OnInit {
       this.animateContact();
     }
 
+    if(taillePage > document.getElementById("via-site").offsetTop) {
+      this.animateViaSite();
+    }
+
+
+
+  }
+
+  animateViaSite(){
+    document.getElementById("via-site").style.animation = "write 2s steps(17)"
+    document.getElementById("via-site").style.width = "15ch";
   }
 
   animateContact(){
-    document.getElementById("via-reseau").style.marginLeft = "5vw";
-    document.getElementById("via-reseau").style.opacity = "1";
+    // document.getElementById("via-reseau").style.marginLeft = "5vw";
+    // document.getElementById("via-reseau").style.opacity = "1";
+    document.getElementById("via-reseau").style.animation = "write 2s steps(17)"
+    document.getElementById("via-reseau").style.width = "15.5ch";
+
 
     document.getElementById("container-reseaux").style.marginLeft = "15vw";
     document.getElementById("container-reseaux").style.opacity = "1";
   }
+
 
   animateProjets(){
     // document.getElementById("barre-projet").style.marginTop = "0";

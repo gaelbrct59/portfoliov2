@@ -76,6 +76,7 @@ h3{
   transition: 0.3s;
   height: 70%;
   width: 100%;
+  transform: scale(1.05);
   filter: grayscale(100%);
 }
 
