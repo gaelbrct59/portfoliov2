@@ -71,29 +71,11 @@ export class BackgroundContainerComponent implements OnInit {
     }
 
     if (taillePage > document.getElementById("barreProgressionVide").offsetTop) {
-      var contenusComp = document.getElementsByClassName("contenuComp") as HTMLCollectionOf<HTMLElement>;
-      var rempl = document.getElementsByClassName("remplissage") as HTMLCollectionOf<HTMLElement>;
-      for (let i = 0; i < rempl.length; i++){
-
-        rempl[i].style.animationName = "avancement";
-
-      }
-      document.getElementById("a25").style.width = "25%";
-      document.getElementById("a50").style.width = "50%";
-      document.getElementById("a75").style.width = "75%";
-
-      for (let i = 0; i < contenusComp.length; i++) {
-        contenusComp[i].style.marginTop = "1vmin";
-        contenusComp[i].style.opacity = "1";
-
-      }
-
-      // document.getElementsByClassName("contenuComp").marginTop = "1vmin";
-      // document.getElementsByClassName("contenuComp").opacity = "1";
-
+      this.animateComp();
     }
 
     if (taillePage > document.getElementById("formations").offsetTop + 10) {
+      document.getElementById("formation").style.animation = "appear 2s";
       this.animateFormation();
     }
 
@@ -118,6 +100,10 @@ export class BackgroundContainerComponent implements OnInit {
       this.animateViaSite();
     }
 
+    if (taillePage > document.getElementById("container-footer").offsetTop ){
+      document.getElementById("footer-pres").style.animation = "appear 2s";
+    }
+
 
 
   }
@@ -132,7 +118,7 @@ export class BackgroundContainerComponent implements OnInit {
     // document.getElementById("via-reseau").style.opacity = "1";
     document.getElementById("via-reseau").style.animation = "write 2s steps(17)"
     document.getElementById("via-reseau").style.width = "15.5ch";
-
+    document.getElementById("contact").style.animation = "appear 2s";
 
     document.getElementById("container-reseaux").style.marginLeft = "15vw";
     document.getElementById("container-reseaux").style.opacity = "1";
@@ -154,6 +140,30 @@ export class BackgroundContainerComponent implements OnInit {
     // }
   }
 
+  animateComp(){
+    document.getElementById("competence").style.animation = "appear 2s";
+
+    var contenusComp = document.getElementsByClassName("contenuComp") as HTMLCollectionOf<HTMLElement>;
+    var rempl = document.getElementsByClassName("remplissage") as HTMLCollectionOf<HTMLElement>;
+    for (let i = 0; i < rempl.length; i++){
+
+      rempl[i].style.animationName = "avancement";
+
+    }
+    document.getElementById("a25").style.width = "25%";
+    document.getElementById("a50").style.width = "50%";
+    document.getElementById("a75").style.width = "75%";
+
+    for (let i = 0; i < contenusComp.length; i++) {
+      contenusComp[i].style.marginTop = "1vmin";
+      contenusComp[i].style.opacity = "1";
+
+    }
+
+    // document.getElementsByClassName("contenuComp").marginTop = "1vmin";
+    // document.getElementsByClassName("contenuComp").opacity = "1";
+  }
+
 
 
   animateFormation(){
@@ -173,7 +183,7 @@ export class BackgroundContainerComponent implements OnInit {
 
       for (let i = 0; i < links.length; i++) {
         links[i].style.color="white";
-        links[i].style.padding="0 4vw 0 4vw";
+        links[i].style.padding="0 3vw 0 3vw";
         links[i].style.fontSize="calc(5px + 1.2vw)";
       }
 

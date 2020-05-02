@@ -3,6 +3,33 @@
   color: #FFF;
   margin-top: -5vh;
   /* padding-bottom: 5vh; */
+  padding-top: 20vh;
+}
+
+#footer-pres{
+  position: relative;
+  font-size: calc(15px + 3vw);
+  bottom: 0;
+  height: 1ch;
+}
+
+#container-titre-footer{
+  margin-top: -7vh;
+  color: #C8D3DB;
+  position: absolute;
+  border-bottom: solid;
+  overflow: hidden;
+}
+
+
+@keyframes appear {
+  from{
+    bottom: -50vh;
+
+  }
+  to{
+    bottom: 0;
+  }
 }
 
 .modal{
@@ -60,15 +87,6 @@
   color: #800000;
 }
 
-#footer-pres{
-
-  /* width: 100%; */
-  border-bottom: solid;
-  border-width: 1px;
-
-  font-size: calc(10px + 1.5vw);
-
-}
 
 .content-footer{
   padding: 3vmin;

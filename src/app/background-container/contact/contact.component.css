@@ -8,10 +8,32 @@
   background-repeat: repeat-y;
   background-size: cover;
   margin-top: -6vh;
+  padding-top: 40vh;
 }
 
 #contact{
+  position: relative;
   font-size: calc(25px + 3vw);
+  bottom: 0;
+  height: 1ch;
+  /* animation: appear 2s; */
+}
+
+@keyframes appear {
+  from{
+    bottom: -50vh;
+
+  }
+  to{
+    bottom: 0;
+  }
+}
+
+#container-titre{
+  color: #C8D3DB;
+  position: absolute;
+  border-bottom: solid;
+  overflow: hidden;
 }
 
 #containerGrow{

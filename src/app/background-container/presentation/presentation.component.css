@@ -13,6 +13,33 @@
 }
 
 
+#competence{
+  position: relative;
+  font-size: calc(15px + 3vw);
+  bottom: 0;
+  height: 1ch;
+  /* animation: appear 2s; */
+}
+
+@keyframes appear {
+  from{
+    bottom: -50vh;
+
+  }
+  to{
+    bottom: 0;
+  }
+}
+
+#container-titre-comp{
+  color: #000;
+  position: absolute;
+  border-bottom: solid;
+  overflow: hidden;
+}
+
+
+
 #phrase-de-presentation .pres{
   padding: 2vmin;
   margin-right: 100vw;
@@ -81,6 +108,7 @@
 }
 
 #container-competences {
+  margin-top: 20vh;
   margin-left: 10vw;
 }
 

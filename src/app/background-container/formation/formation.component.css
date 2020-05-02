@@ -1,5 +1,5 @@
 #formation-container{
-  padding-bottom: 5vh;
+  padding-bottom: 10vh;
   /* background-color: #656563; */
   color: #FFF;
   width: 100vw;
@@ -8,6 +8,7 @@
   background-position: center;
   background-repeat: repeat-y;
   background-size: cover;
+  padding-top: 20vh;
 }
 
 #formations {
@@ -15,6 +16,32 @@
   font-size:calc(5px + 1.5vw);
   width: 75vw;
 }
+
+#formation{
+  position: relative;
+  font-size: calc(25px + 3vw);
+  bottom: 0;
+  height: 1ch;
+  /* animation: appear 2s; */
+}
+
+@keyframes appear {
+  from{
+    bottom: -50vh;
+
+  }
+  to{
+    bottom: 0;
+  }
+}
+
+#container-titre-formation{
+  color: #C8D3DB;
+  position: absolute;
+  border-bottom: solid;
+  overflow: hidden;
+}
+
 
 .formation{
   position: relative;
