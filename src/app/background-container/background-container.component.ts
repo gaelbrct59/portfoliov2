@@ -62,11 +62,7 @@ export class BackgroundContainerComponent implements OnInit {
     document.getElementById("container-contact").style.backgroundPositionY = -+ taillePage*0.5 + 'px';
 
     if (taillePage > document.getElementById("apppresentation").offsetTop) {
-      document.getElementById("phrase-de-presentation").style.transition = "2.5s";
-      document.getElementById("phrase-de-presentation").style.top = "20vh";
-      document.getElementById("phrase-de-presentation").style.opacity = "1";
-
-
+      this.animatePhrasePresentation();
 
     }
 
@@ -75,8 +71,6 @@ export class BackgroundContainerComponent implements OnInit {
     }
 
     if (taillePage > document.getElementById("formations").offsetTop + 10) {
-      document.getElementById("formation").style.bottom = "0";
-      document.getElementById("formation").style.animation = "appear 2s";
       this.animateFormation();
     }
 
@@ -85,11 +79,7 @@ export class BackgroundContainerComponent implements OnInit {
     }
 
     if (taillePage > document.getElementById("pres-git").offsetTop + document.getElementById("container-projets").offsetTop){
-      document.getElementById("pres-git").style.marginLeft = "5vw";
-      document.getElementById("pres-git").style.opacity = "1";
-
-      document.getElementById("anim-chat").style.marginLeft = "5vw";
-      document.getElementById("anim-chat").style.opacity = "1";
+      this.animateGitLogo();
 
     }
 
@@ -171,11 +161,27 @@ export class BackgroundContainerComponent implements OnInit {
 
 
   animateFormation(){
+    document.getElementById("formation").style.bottom = "0";
+    document.getElementById("formation").style.animation = "appear 2s";
     var element = document.getElementsByClassName('formation') as HTMLCollectionOf<HTMLElement>;
     for (let i = 0; i < element.length; i++) {
       element[i].style.left = "20vw";
       element[i].style.opacity = "1";
     }
+  }
+
+  animateGitLogo(){
+    document.getElementById("pres-git").style.marginLeft = "5vw";
+    document.getElementById("pres-git").style.opacity = "1";
+
+    document.getElementById("anim-chat").style.marginLeft = "5vw";
+    document.getElementById("anim-chat").style.opacity = "1";
+  }
+
+  animatePhrasePresentation(){
+    document.getElementById("phrase-de-presentation").style.transition = "2.5s";
+    document.getElementById("phrase-de-presentation").style.top = "20vh";
+    document.getElementById("phrase-de-presentation").style.opacity = "1";
   }
 
   changeStyleTopBar(){

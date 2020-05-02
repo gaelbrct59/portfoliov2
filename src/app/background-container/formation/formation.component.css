@@ -36,7 +36,7 @@
 }
 
 #container-titre-formation{
-  color: #C8D3DB;
+  color: #FFF;
   position: absolute;
   border-bottom: solid;
   overflow: hidden;
@@ -57,6 +57,7 @@
 
 a{
   text-decoration: none;
+  text-decoration: underline;
   color: #87D6E7;
 }
 
