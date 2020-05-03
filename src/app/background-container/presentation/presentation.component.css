@@ -6,7 +6,7 @@
   opacity:0;
   text-align: center;
   padding-bottom: 1vh;
-  font-size: calc(9px + 3.5vw);
+  font-size: calc(8px + 3.5vw);
   /* font-weight: bold; */
   color: #656563;
   font-family: 'Optima', sans-serif;
@@ -108,7 +108,7 @@
 }
 
 #container-competences {
-  margin-top: 25vh;
+  margin-top: calc(25vh - 15px);
   margin-left: 10vw;
 }
 
@@ -122,7 +122,7 @@
   border-radius: 20px;
   display: flex;
   width: 100vw;
-  padding-bottom: calc(8px + 80vh);
+  padding-bottom: calc(75vh - 50px);
   padding-top: 8vh;
 }
 
