@@ -10,12 +10,6 @@ import { PresentationComponent } from './presentation/presentation.component';
   selector: 'app-background-container',
   templateUrl: './background-container.component.html',
   styleUrls: ['./background-container.component.css'],
-  animations: [
-    trigger('test', [
-        state('active', style({ opacity:"1" })),
-        transition('* => active', animate("5000ms"))
-    ])
-  ]
 })
 export class BackgroundContainerComponent implements OnInit {
   value: string= '';
@@ -63,7 +57,6 @@ export class BackgroundContainerComponent implements OnInit {
 
     if (taillePage > document.getElementById("apppresentation").offsetTop) {
       this.animatePhrasePresentation();
-
     }
 
     if (taillePage > document.getElementById("barreProgressionVide").offsetTop) {
@@ -80,11 +73,14 @@ export class BackgroundContainerComponent implements OnInit {
 
     if (taillePage > document.getElementById("pres-git").offsetTop + document.getElementById("container-projets").offsetTop){
       this.animateGitLogo();
-
     }
 
     if(taillePage > document.getElementById("container-contact").offsetTop) {
       this.animateContact();
+    }
+
+    if (taillePage > document.getElementById("via-reseau").offsetTop) {
+      this.animateViaReseau();
     }
 
     if(taillePage > document.getElementById("via-site").offsetTop) {
@@ -108,13 +104,17 @@ export class BackgroundContainerComponent implements OnInit {
   animateContact(){
     // document.getElementById("via-reseau").style.marginLeft = "5vw";
     // document.getElementById("via-reseau").style.opacity = "1";
-    document.getElementById("via-reseau").style.animation = "write 2s steps(17)"
-    document.getElementById("via-reseau").style.width = "15.5ch";
+
     document.getElementById("contact").style.animation = "appear 2s";
     document.getElementById("contact").style.bottom = "0";
 
     document.getElementById("container-reseaux").style.marginLeft = "15vw";
     document.getElementById("container-reseaux").style.opacity = "1";
+  }
+
+  animateViaReseau(){
+    document.getElementById("via-reseau").style.animation = "write 2s steps(17)"
+    document.getElementById("via-reseau").style.width = "15.5ch";
   }
 
 

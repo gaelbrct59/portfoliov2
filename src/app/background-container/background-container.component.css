@@ -9,16 +9,91 @@
 }
 
 
-#phrase-presentation{
+/* #phrase-presentation{
   position: absolute;
   top: 70vh;
   font-size:calc(10px + 2.7vw);
   left: 30vw;
   text-align: center;
-  z-index: 9;
-  opacity: 0;
-  color: #000;
+  z-index: 9; */
+  /* opacity: 0; */
+  /* color: #000; */
+/* } */
+
+#anim-phrase-presentation{
+  position: absolute;
+  width: 70vw;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  display: block;
+  text-align: center;
+  font-size: calc(3.7px + 4vw);
+  overflow: hidden;
 }
+
+#welcome{
+  position: relative;
+  /* border-bottom: solid 0.5px; */
+  overflow: hidden;
+  animation: appear 1s;
+  bottom: -30vh;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+#gael{
+  position: relative;
+  top: -30vh;
+  overflow: hidden;
+  animation: appear2 1s ease;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  color: #00006F;
+  font-weight: bold;
+}
+
+#trait-milieu{
+  position: relative;
+  height: 0.5px;
+  animation-delay: 0.5s;
+  background-color: #000;
+  animation-fill-mode: forwards;
+  animation: tracer 1s;
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    bottom: -5vh;
+  }
+  to{
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@keyframes appear2 {
+  from{
+    opacity: 0;
+    top: -10vh;
+  }
+  to{
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes tracer {
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%
+  }
+}
+
+
 
 
 #flechePresentation{

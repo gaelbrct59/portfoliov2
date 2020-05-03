@@ -53,9 +53,9 @@ export class PresentationComponent implements OnInit {
       // document.getElementById('checkBox-pres').style.paddingBottom = "30vh";
 
 
-      document.getElementById('phrase-presentation').style.top = "50vh";
-      document.getElementById('phrase-presentation').style.left = "5px";
-      document.getElementById('phrase-presentation').style.right = "5px";
+      // document.getElementById('phrase-presentation').style.top = "50vh";
+      // document.getElementById('phrase-presentation').style.left = "5px";
+      // document.getElementById('phrase-presentation').style.right = "5px";
     }
 
     var checks = document.getElementsByClassName('checkBoxesWH') as HTMLCollectionOf<HTMLInputElement>;
