@@ -189,7 +189,7 @@ export class BackgroundContainerComponent implements OnInit {
     var topbar_lien = document.getElementById("topbar-liens");
     if(document.documentElement.scrollTop > 200){
       topbar_lien.style.background="#656563";
-      topbar_lien.style.padding="0.7vw 0px";
+      topbar_lien.style.padding="1vw 0px";
 
       for (let i = 0; i < links.length; i++) {
         links[i].style.color="white";

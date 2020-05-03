@@ -122,8 +122,8 @@
   border-radius: 20px;
   display: flex;
   width: 100vw;
-  padding-bottom: calc(5px + 90vh);
-  padding-top: 10vh;
+  padding-bottom: calc(8px + 80vh);
+  padding-top: 8vh;
 }
 
 .checkBoxesWH{
