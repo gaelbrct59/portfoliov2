@@ -3,7 +3,7 @@
   color: #FFF;
   margin-top: -5vh;
   /* padding-bottom: 5vh; */
-  padding-top: 15vh;
+  padding-top: calc(25vh - 25px);
 }
 
 #footer-pres{
