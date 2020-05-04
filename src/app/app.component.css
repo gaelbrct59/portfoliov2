@@ -30,7 +30,7 @@
   width: 100%;
   background: url(../assets/img/background.png);
   opacity: 80%;
-  background-size: 120%;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 
