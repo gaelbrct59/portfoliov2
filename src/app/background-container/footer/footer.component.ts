@@ -15,7 +15,8 @@ export class FooterComponent implements OnInit {
 
 
   dispModal(){
-    document.getElementById("modalCV").style.display ="block";
+    document.getElementById("modalCV").style.height ="90vh";
+    document.getElementById("modalCV").style.opacity ="1";
   }
 
 }

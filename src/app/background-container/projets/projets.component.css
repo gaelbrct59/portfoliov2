@@ -93,8 +93,7 @@ h3{
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  overflow: hidden; /* Enable scroll if needed */
   overscroll-behavior-y: contain;
 }
 
@@ -104,8 +103,12 @@ h3{
   padding: 3vmin;
   width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 15px;
-  max-height: 70vh;
+  max-height: 80vh;
   overflow: auto;
+}
+
+.modal-content img{
+  width: 100%;
 }
 
 #anim-chat{
@@ -116,11 +119,16 @@ h3{
 }
 
 #modalStage2018{
-  display: none;
+  transition: 1s;
+  height: 0;
+  opacity: 0;
 }
 
 #modalStage2017{
-  display: none;
+  transition: 1s;
+  opacity: 0;
+  height: 0;
+  /* margin-left: -200vw; */
 }
 
 

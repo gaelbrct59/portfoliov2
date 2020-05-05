@@ -29,13 +29,7 @@ export class ProjetsComponent implements OnInit {
 
     var modals = document.getElementsByClassName("modal");
     for (let i = 0; i < modals.length; i++) {
-      modals[i].addEventListener("click", function test(event) {
-        for (let i = 0; i < modals.length; i++) {
-          if(event.target == modals[i]){
-            document.getElementById(modals[i].id).style.display = "none";
-          }
-        }
-      }, true);
+      modals[i].addEventListener("click", this.closeModal, true);
     }
   }
 
@@ -49,19 +43,20 @@ export class ProjetsComponent implements OnInit {
   }
 
   modalStage2018(){
-    document.getElementById("modalStage2018").style.display = "block";
+    document.getElementById("modalStage2018").style.height = "90vh";
+    document.getElementById("modalStage2018").style.opacity = "1";
   }
 
   modalStage2017(){
-    document.getElementById("modalStage2017").style.display = "block";
+    document.getElementById("modalStage2017").style.opacity = "1";
+    document.getElementById("modalStage2017").style.height = "90vh";
   }
 
   closeModal(){
     var modals = document.getElementsByClassName("modal") as HTMLCollectionOf<HTMLElement>;
     for (let i = 0; i < modals.length; i++) {
-      if(modals[i].style.display == "block"){
-        document.getElementById(modals[i].id).style.display = "none";
-      }
+      document.getElementById(modals[i].id).style.height = "0";
+      document.getElementById(modals[i].id).style.opacity = "0";
 
     }
   }

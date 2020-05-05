@@ -39,23 +39,23 @@
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  overflow: hidden; /* Enable scroll if needed */
   overscroll-behavior-y: contain;
 }
 
 .modal-content{
   background-color: #fefefe;
-  margin: 5% auto; /* 15% from the top and centered */
-  padding: 3vmin;
+  margin: 3% auto; /* 15% from the top and centered */
   width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 15px;
-  max-height: 70vh;
+  max-height: 90vh;
   overflow: auto;
 }
 
 #modalCV{
-  display: none;
+  height: 0;
+  transition: 1s;
+  opacity: 0;
 }
 
 .modal .close-modal{

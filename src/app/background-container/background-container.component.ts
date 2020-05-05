@@ -46,7 +46,7 @@ export class BackgroundContainerComponent implements OnInit {
     var taillePage = window.pageYOffset;
 
     this.changeStyleTopBar();
-    this.background.style.opacity = 0.80 - taillePage/450 + '' ;
+    this.background.style.opacity = 0.80 - taillePage/600 + '' ;
     this.background.style.top = + taillePage +'px';
     this.background.style.backgroundPositionY = -+ taillePage/4.5 + 'px';
     // topbar_lien.style.opacity = taillePage/400 + ''
