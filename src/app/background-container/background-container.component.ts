@@ -188,7 +188,7 @@ export class BackgroundContainerComponent implements OnInit {
     document.getElementById("formation").style.animation = "appear 2s";
     var element = document.getElementsByClassName('formation') as HTMLCollectionOf<HTMLElement>;
     for (let i = 0; i < element.length; i++) {
-      element[i].style.left = "40vw";
+      element[i].style.left = "20vw";
       element[i].style.opacity = "1";
     }
   }
