@@ -39,29 +39,7 @@ export class BackgroundContainerComponent implements OnInit {
     document.getElementById("trait-milieu").className += "tracer";
 
     document.getElementById("topbar-liens").className += "appearTopBar";
-
-    // var gael = document.getElementById("gael");
-    // var trait = document.getElementById("trait");
-    // var welcome = document.getElementById("welcome");
-
-    // gael.style.animation = "appear2 1s ease";
-    // gael.style.animationDelay = "7s"
-    //
-    // document.getElementById("welcome").style.animation = "appear 1s ease";
-    // document.getElementById("gael").style.animation = "appear2 1s ease";
-    // document.getElementById("trait-milieu").style.animation = "tracer 1s";
   }
-
-
-  // scroll(){
-  //   var firstDiv = document.getElementById("test").offsetTop;
-  //   // console.log(firstDiv);
-  //
-  // 	var windowHeight = document.documentElement.clientHeight;
-  // 		if (window.pageYOffset + windowHeight > firstDiv) {
-  // 	      console.log('visible');
-  // 		}
-  // }
 
   scroll = (event):void => {
     // var background = document.getElementById("background");
