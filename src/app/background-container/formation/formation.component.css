@@ -10,11 +10,10 @@
   background-size: cover;
   padding-top: 20vh;
 }
-
 #formations {
   /* position: relative; */
   font-size:calc(5px + 1.5vw);
-  width: 75vw;
+  width: 65vw;
 }
 
 #formation{
@@ -23,6 +22,7 @@
   bottom: -50vh;
   height: 1ch;
   /* animation: appear 2s; */
+  z-index: 2;
 }
 
 @keyframes appear {
@@ -40,6 +40,7 @@
   position: absolute;
   border-bottom: solid;
   overflow: hidden;
+  z-index: 1;
 }
 
 
@@ -93,4 +94,24 @@ h3{
   width: 1px;
   background-color: #87D6E7;
   left: 12vw;
+}
+
+
+#logoFormation{
+  margin-top: 1vw;
+  left: -100vw;
+  width: 20vw;
+  transition: .5s ease;
+}
+
+
+#logoDiplome{
+  z-index: 0;
+  right: -100vw;
+  width: 10vw;
+  transition: 4s ease;
+}
+
+.imgLogo{
+  position: absolute;
 }

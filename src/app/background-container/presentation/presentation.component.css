@@ -13,6 +13,7 @@
 }
 
 
+
 #competence{
   position: relative;
   font-size: calc(15px + 3vw);
@@ -109,6 +110,7 @@
 
 #container-competences {
   margin-top: calc(25vh - 15px);
+  z-index: 3;
   margin-left: 10vw;
 }
 

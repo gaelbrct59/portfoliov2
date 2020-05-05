@@ -52,6 +52,18 @@ export class BackgroundContainerComponent implements OnInit {
     // topbar_lien.style.opacity = taillePage/400 + ''
     document.getElementById("formation-container").style.top = + taillePage +'px';
     document.getElementById("formation-container").style.backgroundPositionY = -+ taillePage *0.5 + 'px';
+    var parallaxLogo = (taillePage - document.getElementById("formation-container").offsetTop - document.getElementById("formation-container").offsetHeight/1.6)*1.6;
+    var parallaxLogo2 = (taillePage - document.getElementById("formation-container").offsetTop - document.getElementById("formation-container").offsetHeight/2)*0.45 + 30;
+    if (parallaxLogo>-40) {
+      document.getElementById("logoFormation").style.opacity = "1";
+      document.getElementById("logoFormation").style.transform = "translateY(" + parallaxLogo + "px)";
+    }else{
+      document.getElementById("logoFormation").style.opacity = "0";
+    }
+    if (parallaxLogo2>50) {
+      document.getElementById("logoDiplome").style.transform = "translateY(" + parallaxLogo2 + "px)";
+    }
+
 
     document.getElementById("container-contact").style.top = + taillePage +'px';
     document.getElementById("container-contact").style.backgroundPositionY = -+ taillePage*0.5 + 'px';
@@ -166,9 +178,11 @@ export class BackgroundContainerComponent implements OnInit {
     document.getElementById("formation").style.animation = "appear 2s";
     var element = document.getElementsByClassName('formation') as HTMLCollectionOf<HTMLElement>;
     for (let i = 0; i < element.length; i++) {
-      element[i].style.left = "20vw";
+      element[i].style.left = "30vw";
       element[i].style.opacity = "1";
     }
+    document.getElementById("logoFormation").style.left = "2vw";
+    document.getElementById("logoDiplome").style.right = "30vw";
   }
 
   animateGitLogo(){
