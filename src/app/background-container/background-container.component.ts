@@ -39,7 +39,6 @@ export class BackgroundContainerComponent implements OnInit {
     document.getElementById("trait-milieu").className += "tracer";
 
     document.getElementById("topbar-liens").className += "appearTopBar";
-    document.getElementById("background").className += "animBackground";
 
     // var gael = document.getElementById("gael");
     // var trait = document.getElementById("trait");
