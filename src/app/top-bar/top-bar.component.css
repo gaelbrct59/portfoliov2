@@ -8,6 +8,8 @@
   transition: 0.4s;
   background-color: rgba(255, 255, 255, 0.4);
   z-index: 99;
+
+  animation-fill-mode: forwards;
 }
 
 #topbar-liens a {
@@ -25,4 +27,14 @@
 #topbar-right{
   float: right;
   margin-right: 2vw;
+}
+
+.appearTopBar{
+  animation: appearTopBar 1s;
+}
+
+@keyframes appearTopBar {
+  100%{
+    top: 0;
+  }
 }

@@ -23,13 +23,37 @@ export class BackgroundContainerComponent implements OnInit {
 
   ngOnInit(){
     // main();
+    window.addEventListener("load", this.charged);
+
     window.addEventListener('scroll', this.scroll, true);
     this.value="active";
     this.background = document.getElementById("background");
-
-
-
+    // document.getElementById("logoFormation").style.top = document.getElementById("formation-container").offsetTop + 'px';
   }
+
+  charged(){
+    document.getElementById("loader").className += "hidden";
+
+    document.getElementById("welcome").className += "appear";
+    document.getElementById("gael").className += "appear2";
+    document.getElementById("trait-milieu").className += "tracer";
+
+    document.getElementById("topbar-liens").className += "appearTopBar";
+    document.getElementById("background").className += "animBackground";
+
+    // var gael = document.getElementById("gael");
+    // var trait = document.getElementById("trait");
+    // var welcome = document.getElementById("welcome");
+
+    // gael.style.animation = "appear2 1s ease";
+    // gael.style.animationDelay = "7s"
+    //
+    // document.getElementById("welcome").style.animation = "appear 1s ease";
+    // document.getElementById("gael").style.animation = "appear2 1s ease";
+    // document.getElementById("trait-milieu").style.animation = "tracer 1s";
+  }
+
+
   // scroll(){
   //   var firstDiv = document.getElementById("test").offsetTop;
   //   // console.log(firstDiv);
@@ -50,7 +74,7 @@ export class BackgroundContainerComponent implements OnInit {
     this.background.style.backgroundPositionY = -+ taillePage/4.5 + 'px';
     // topbar_lien.style.opacity = taillePage/400 + ''
     document.getElementById("formation-container").style.top = + taillePage +'px';
-    document.getElementById("formation-container").style.backgroundPositionY = -+ taillePage *2 + 'px';
+    document.getElementById("formation-container").style.backgroundPositionY = -+ taillePage *0.5 + 'px';
 
     document.getElementById("container-contact").style.top = + taillePage +'px';
     document.getElementById("container-contact").style.backgroundPositionY = -+ taillePage*0.5 + 'px';
@@ -165,7 +189,7 @@ export class BackgroundContainerComponent implements OnInit {
     document.getElementById("formation").style.animation = "appear 2s";
     var element = document.getElementsByClassName('formation') as HTMLCollectionOf<HTMLElement>;
     for (let i = 0; i < element.length; i++) {
-      element[i].style.left = "20vw";
+      element[i].style.left = "40vw";
       element[i].style.opacity = "1";
     }
   }
