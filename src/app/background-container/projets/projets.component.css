@@ -103,7 +103,7 @@ h3{
   padding: 3vmin;
   width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 15px;
-  max-height: 80vh;
+  height: 95vh;
   overflow: auto;
 }
 

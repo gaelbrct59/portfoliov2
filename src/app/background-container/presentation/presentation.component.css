@@ -109,7 +109,7 @@
 }
 
 #container-competences {
-  margin-top: calc(25vh - 15px);
+  margin-top: calc(25vh - 40px);
   z-index: 3;
   margin-left: 10vw;
 }
@@ -124,7 +124,7 @@
   border-radius: 20px;
   display: flex;
   width: 100vw;
-  padding-bottom: calc(75vh - 50px);
+  padding-bottom: calc(75vh - 100px);
   padding-top: 8vh;
 }
 

@@ -43,13 +43,13 @@ export class ProjetsComponent implements OnInit {
   }
 
   modalStage2018(){
-    document.getElementById("modalStage2018").style.height = "90vh";
+    document.getElementById("modalStage2018").style.height = "95vh";
     document.getElementById("modalStage2018").style.opacity = "1";
   }
 
   modalStage2017(){
     document.getElementById("modalStage2017").style.opacity = "1";
-    document.getElementById("modalStage2017").style.height = "90vh";
+    document.getElementById("modalStage2017").style.height = "95vh";
   }
 
   closeModal(){
