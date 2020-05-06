@@ -44,7 +44,7 @@ h3{
 }
 
 .projet {
-  /* opacity: 0; */
+  /* animation: dispProjets 10s; */
   margin: 1vw;
   border: solid;
   border-radius: 20px;
@@ -54,8 +54,28 @@ h3{
   font-size: 0;
   cursor: pointer;
   transition: 0.8s;
-  animation: 0.8s;
   box-shadow: 1px 1px 15px 5px rgba(0,0,0,0.58);
+}
+
+.projets .projet{
+  /* animation: dispProjets 2s; */
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: calc(0.7s * var(--timer));
+}
+
+.dispProjets{
+  animation: dispProjets 1s;
+}
+
+
+@keyframes dispProjets {
+  0%,50%{
+    opacity: 0;;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .projet:hover{
@@ -133,10 +153,10 @@ h3{
 }
 
 
-img{
+/* img{
   margin-left: -50vw;
   transition: 1s;
-}
+} */
 
 .modal .close-modal{
   position: absolute;

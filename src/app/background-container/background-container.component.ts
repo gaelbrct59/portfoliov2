@@ -134,16 +134,12 @@ export class BackgroundContainerComponent implements OnInit {
   animateProjets(){
     // document.getElementById("barre-projet").style.marginTop = "0";
     document.getElementById("barre-projet").style.opacity = "1";
-    const imgs = document.getElementsByTagName("img") as HTMLCollectionOf<HTMLElement>;
-    for (let i = 0; i < imgs.length; i++) {
-      imgs[i].style.marginLeft = "0";
 
+    var projets = document.getElementsByClassName("projet") as HTMLCollectionOf<HTMLElement>;
+    for (let i = 0; i < projets.length; i++) {
+      // projets[i].style.opacity = "1";
+      projets[i].className += " dispProjets";
     }
-    // var projets = document.getElementsByClassName("projet") as HTMLCollectionOf<HTMLElement>;
-
-    // for (let i = 0; i < document.getElementsByClassName("projet").length; i++) {
-    //   projets[i].style.opacity = "1";
-    // }
   }
 
   animateComp(){
