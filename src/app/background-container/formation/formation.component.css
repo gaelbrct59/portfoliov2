@@ -59,7 +59,7 @@
   animation-delay: calc(0.7s * var(--timer));
   vertical-align: middle;
   color: #01016F;
-  font-size: calc(3vw + 20px);
+  font-size: calc(3vw + 23px);
 }
 
 .formation .formation-contenu{
@@ -67,11 +67,11 @@
   animation-delay: calc(0.7s * var(--timer));
   opacity: 0;
   margin-left: 30vw;
-  font-size: calc(2vw + 10px);
+  font-size: calc(2vw + 13px);
 }
 
 @keyframes appearContenu {
-  0%{
+  0%,80%{
     opacity: 0;
   }
   100%{
@@ -85,7 +85,7 @@
 }
 
 .appearContenu{
-  animation: appearContenu 1s;
+  animation: appearContenu 2s;
   animation-fill-mode: forwards;
 }
 

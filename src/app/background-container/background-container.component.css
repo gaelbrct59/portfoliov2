@@ -43,7 +43,7 @@
     transform: translateY(0px);
   }
   10%{
-    transform: translateY(-7px);
+    transform: translateY(-0.5vh);
   }
   20%, 100%{
     transform: translateY(0px);
