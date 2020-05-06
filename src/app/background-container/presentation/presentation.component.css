@@ -124,9 +124,17 @@
   border-radius: 20px;
   display: flex;
   width: 100vw;
-  padding-bottom: calc(75vh - 100px);
+  padding-bottom: 60vh;
   padding-top: 8vh;
 }
+
+@media (max-width: 600px){
+  #checkBox-pres{
+    padding-bottom: 240px;
+
+  }
+}
+
 
 .checkBoxesWH{
   /* position: relative; */
