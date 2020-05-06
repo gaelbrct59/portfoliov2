@@ -54,11 +54,12 @@
 
 .formation #date h3{
   /* position: relative; */
+  margin: 5vmin;
   margin-left: -80vw;
   animation-delay: calc(0.7s * var(--timer));
   vertical-align: middle;
   color: #01016F;
-  font-size: calc(4vw + 20px);
+  font-size: calc(3vw + 20px);
 }
 
 .formation .formation-contenu{
