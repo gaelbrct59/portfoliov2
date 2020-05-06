@@ -46,27 +46,28 @@ export class BackgroundContainerComponent implements OnInit {
     var taillePage = window.pageYOffset;
 
     this.changeStyleTopBar();
-    this.background.style.opacity = 0.80 - taillePage/600 + '' ;
-    this.background.style.top = + taillePage +'px';
-    this.background.style.backgroundPositionY = -+ taillePage/4.5 + 'px';
-    // topbar_lien.style.opacity = taillePage/400 + ''
-    document.getElementById("formation-container").style.top = + taillePage +'px';
-    document.getElementById("formation-container").style.backgroundPositionY = -+ taillePage *0.5 + 'px';
-    var parallaxLogo = (taillePage - document.getElementById("formation-container").offsetTop - document.getElementById("formation-container").offsetHeight/1.6)*1.6;
-    var parallaxLogo2 = (taillePage - document.getElementById("formation-container").offsetTop - document.getElementById("formation-container").offsetHeight/2)*0.45 + 30;
-    if (parallaxLogo>-40) {
-      document.getElementById("logoFormation").style.opacity = "1";
-      document.getElementById("logoFormation").style.transform = "translateY(" + parallaxLogo + "px)";
-    }else{
-      document.getElementById("logoFormation").style.opacity = "0";
-    }
-    if (parallaxLogo2>50) {
-      document.getElementById("logoDiplome").style.transform = "translateY(" + parallaxLogo2 + "px)";
-    }
+    this.parallaxItems(taillePage);
 
+    // if (taillePage > document.getElementById("apppresentation").offsetTop && taillePage < document.getElementById("barreProgressionVide").offsetTop) {
+    //   this.animatePhrasePresentation();
+    // }else if(taillePage < document.getElementById("formations").offsetTop + 10){
+    //   this.animateComp();
+    // }else if(taillePage < document.getElementById("container-projets").offsetTop){
+    //   this.animateFormation();
+    // }else if(taillePage < document.getElementById("pres-git").offsetTop + document.getElementById("container-projets").offsetTop){
+    //   this.animateProjets();
+    // }else if(taillePage < document.getElementById("container-contact").offsetTop){
+    //   this.animateGitLogo();
+    // }else if(taillePage < document.getElementById("via-reseau").offsetTop){
+    //   this.animateContact();
+    // }else if(taillePage < document.getElementById("via-site").offsetTop){
+    //   this.animateViaReseau();
+    // }else if(taillePage < document.getElementById("container-footer").offsetTop){
+    //   this.animateViaSite();
+    // }else{
+    //   this.animateFooter();
+    // }
 
-    document.getElementById("container-contact").style.top = + taillePage +'px';
-    document.getElementById("container-contact").style.backgroundPositionY = -+ taillePage*0.5 + 'px';
 
     if (taillePage > document.getElementById("apppresentation").offsetTop) {
       this.animatePhrasePresentation();
@@ -101,8 +102,7 @@ export class BackgroundContainerComponent implements OnInit {
     }
 
     if (taillePage > document.getElementById("container-footer").offsetTop ){
-      document.getElementById("footer-pres").style.bottom = "0";
-      document.getElementById("footer-pres").style.animation = "appear 2s";
+      this.animateFooter();
     }
 
 
@@ -181,8 +181,8 @@ export class BackgroundContainerComponent implements OnInit {
       element[i].style.left = "30vw";
       element[i].style.opacity = "1";
     }
-    document.getElementById("logoFormation").style.left = "2vw";
-    document.getElementById("logoDiplome").style.right = "30vw";
+    // document.getElementById("logoFormation").style.left = "2vw";
+    // document.getElementById("logoDiplome").style.right = "30vw";
   }
 
   animateGitLogo(){
@@ -223,6 +223,33 @@ export class BackgroundContainerComponent implements OnInit {
 
       }
     }
+  }
+
+  animateFooter(){
+    document.getElementById("footer-pres").style.bottom = "0";
+    document.getElementById("footer-pres").style.animation = "appear 2s";
+  }
+
+  parallaxItems(taillePage){
+    this.background.style.opacity = 0.80 - taillePage/600 + '' ;
+    this.background.style.top = + taillePage +'px';
+    this.background.style.backgroundPositionY = -+ taillePage/4.5 + 'px';
+    // topbar_lien.style.opacity = taillePage/400 + ''
+    document.getElementById("formation-container").style.top = + taillePage +'px';
+    document.getElementById("formation-container").style.backgroundPositionY = -+ taillePage *0.5 + 'px';
+    // var parallaxLogo = (taillePage - document.getElementById("formation-container").offsetTop - document.getElementById("formation-container").offsetHeight/2)*0.6;
+    // var parallaxLogo2 = (taillePage - document.getElementById("formation-container").offsetTop - document.getElementById("formation-container").offsetHeight/2)*0.45 + 30;
+    // if (parallaxLogo>-40) {
+    //   document.getElementById("logoFormation").style.transform = "translateY(" + parallaxLogo + "px)";
+    // }
+    // if (parallaxLogo2>50) {
+    //   document.getElementById("logoDiplome").style.transform = "translateY(" + parallaxLogo2 + "px)";
+    // }
+
+
+    document.getElementById("container-contact").style.top = + taillePage +'px';
+    document.getElementById("container-contact").style.backgroundPositionY = -+ taillePage*0.5 + 'px';
+
   }
 
 

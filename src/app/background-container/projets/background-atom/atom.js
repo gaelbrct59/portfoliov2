@@ -20,7 +20,7 @@ export class Atom
       this.dirx = randInt(-2,3);
       this.diry = randInt(-2,3);
       this.neighbour = [];
-      this.diameterSegment = 150;
+      this.diameterSegment = 250;
       if (this.dirx == 0 && this.diry == 0){
         if(randInt(1,2) == 1){
           this.dirx = randInt(1,2);
@@ -118,9 +118,9 @@ export class AtomManager
     this.atoms=[];
     // console.log(document.documentElement.clientWidth);
     if(document.documentElement.clientWidth < 400){
-      this.nbAliveMax=15
+      this.nbAliveMax=10;
     }else{
-      this.nbAliveMax=30;
+      this.nbAliveMax=20;
     }
     for(var i=0;i<this.nbAliveMax;++i) {
       this.atoms.push(new Atom());
