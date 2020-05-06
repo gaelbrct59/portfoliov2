@@ -58,7 +58,7 @@
 
 @media (max-width: 500px){
   .formation{
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
 }
 
@@ -66,7 +66,7 @@
   /* position: relative; */
   margin: 5vmin;
   margin-top: -30vw;
-  animation-delay: calc(0.7s * var(--timer));
+  animation-delay: calc(0.9s * var(--timer));
   vertical-align: middle;
   color: #01016F;
   font-size: calc(3vw + 21px);
@@ -74,7 +74,7 @@
 
 .formation .formation-contenu{
   /* animation: appearContenu 3s; */
-  animation-delay: calc(0.7s * var(--timer));
+  animation-delay: calc(0.9s * var(--timer));
   opacity: 0;
   margin-left: 30vw;
   font-size: calc(2vw + 12px);
