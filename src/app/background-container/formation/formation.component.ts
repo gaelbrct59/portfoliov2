@@ -30,8 +30,6 @@ export class FormationComponent implements OnInit {
     // trait.style.height = point2.offsetTop - point1.offsetTop + point2.offsetHeight + "px";
     trait.style.left = (point1.offsetLeft + point1.offsetWidth/2) + "px";
 
-    console.log(point1.offsetTop + " point1");
-    console.log(document.getElementById("formation-container").offsetTop);
 
     window.addEventListener("resize", this.resizeTrait);
 

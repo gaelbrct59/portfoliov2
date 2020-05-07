@@ -19,7 +19,7 @@ import { DOCUMENT } from '@angular/common';
           left:"-362vw"
       })),
       state('4', style({
-          left:"-545.5vw"
+          left:"-545vw"
       })),
       transition('* <=> *', animate("400ms")),
 
