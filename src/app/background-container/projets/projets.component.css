@@ -70,8 +70,8 @@ h3{
 
 
 @keyframes dispProjets {
-  0%,50%{
-    opacity: 0;;
+  0%,40%{
+    opacity: 0;
   }
   100%{
     opacity: 1;

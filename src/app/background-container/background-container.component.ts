@@ -205,7 +205,7 @@ export class BackgroundContainerComponent implements OnInit {
     var links = document.getElementById('topbar-liens').getElementsByTagName("a");
     var topbar_lien = document.getElementById("topbar-liens");
     if(document.documentElement.scrollTop > 200){
-      topbar_lien.style.background="#656563";
+      topbar_lien.style.background="rgba(65,65,63,0.95)";
       topbar_lien.style.padding="1vw 0px";
 
       for (let i = 0; i < links.length; i++) {
@@ -248,9 +248,9 @@ export class BackgroundContainerComponent implements OnInit {
     //   document.getElementById("logoDiplome").style.transform = "translateY(" + parallaxLogo2 + "px)";
     // }
 
-
-    document.getElementById("container-contact").style.top = + taillePage +'px';
-    document.getElementById("container-contact").style.backgroundPositionY = -+ taillePage*0.5 + 'px';
+    //
+    // document.getElementById("container-contact").style.top = + taillePage +'px';
+    // document.getElementById("container-contact").style.backgroundPositionY = -+ taillePage*0.5 + 'px';
 
   }
 
