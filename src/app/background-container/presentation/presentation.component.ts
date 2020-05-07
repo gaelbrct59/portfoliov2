@@ -31,69 +31,29 @@ export class PresentationComponent implements OnInit {
   valueCheckbox = new String("");
   timer;
 
-  checkBox1: HTMLInputElement;
-  checkBox2: HTMLInputElement;
-  checkBox3: HTMLInputElement;
-  checkBox4: HTMLInputElement;
   constructor() { }
 
   ngOnInit(): void {
-    window.addEventListener("resize", this.resizeCheck);
     this.valueCheckbox = "inactive";
     this.value = "1";
 
-    this.checkBox1 = <HTMLInputElement> document.getElementById("check1");
-    this.checkBox2 = <HTMLInputElement> document.getElementById("check2");
-    this.checkBox3 = <HTMLInputElement> document.getElementById("check3");
-    this.checkBox4 = <HTMLInputElement> document.getElementById("check4");
+    this.check(document.getElementsByClassName("checkBoxesWH")[0]);
+    let timer1 = document.getElementsByClassName("timer")[0] as HTMLElement;
+    timer1.style.animation = "time 10s steps(1000)";
 
-    if(document.documentElement.clientWidth < 400){
-      document.getElementById("flechePresentation").style.left = "10vw";
-      // document.getElementById('background').style.backgroundSize = "185%";
-      // document.getElementById('checkBox-pres').style.paddingBottom = "30vh";
-
-
-      // document.getElementById('phrase-presentation').style.top = "50vh";
-      // document.getElementById('phrase-presentation').style.left = "5px";
-      // document.getElementById('phrase-presentation').style.right = "5px";
-    }
-
-    var checks = document.getElementsByClassName('checkBoxesWH') as HTMLCollectionOf<HTMLInputElement>;
-    for (let i = 0; i < checks.length; i++) {
-      checks[i].style.width = (document.documentElement.clientWidth / 4) - 10 + "px";
-    }
 
     this.timer = setInterval(() => {
+        var timers = document.getElementsByClassName("timer") as HTMLCollectionOf<HTMLElement>;
         let increaseValue: string = String(parseInt(this.value) + 1 + "");
         if (increaseValue == "5") {
           increaseValue = "1";
         }
         this.changeCheck(increaseValue);
-    }, 9000);
+        timers[parseInt(increaseValue) - 1].style.animation = "time 10s steps(1000)";
+
+    }, 10000);
 
   }
-
-  resizeCheck(){
-    var checks = document.getElementsByClassName('checkBoxesWH') as HTMLCollectionOf<HTMLInputElement>;
-    for (let i = 0; i < checks.length; i++) {
-      checks[i].style.width = (document.documentElement.clientWidth / 4) - 10 + "px";
-    }
-  }
-
-  // animateCheck(){
-  //   var firstDiv = document.getElementById('phrase-de-presentation').offsetTop;
-  //   const element = document.querySelector('app-presentation');
-  //   // console.log(document.querySelector('app-presentation').offsetTop);
-  //   // console.log(window.pageYOffset);
-  //   // console.log(firstDiv);
-  //   if(element != null && element instanceof HTMLElement) {
-  //     if (window.pageYOffset > element.offsetTop) {
-  //       console.log(this.valueCheckbox);
-  //       this.valueCheckbox = "active";
-  //     }
-  //   }
-  //
-  // }
 
   toggle1(){
     // this.value="1";
@@ -135,17 +95,32 @@ export class PresentationComponent implements OnInit {
   changeCheck(tmp){
     this.value = tmp;
     tmp -= 1;
+    var timers = document.getElementsByClassName('timer') as HTMLCollectionOf<HTMLInputElement>
     var checks = document.getElementsByClassName('checkBoxesWH') as HTMLCollectionOf<HTMLInputElement>;
     for (let i = 0; i < checks.length; i++) {
 
       if(i != parseInt(tmp)){
-        checks[i].checked = false;
+        this.uncheck(checks[i]);
+        timers[i].style.animation = "none";
 
       }else{
-        checks[i].checked = true;
+        this.check(checks[i]);
       }
 
     }
+  }
+
+  check(tmp){
+    tmp.style.width = "20vw";
+    tmp.style.backgroundColor = "#656563";
+
+  }
+
+  uncheck(tmp){
+    tmp.style.width = "calc(5px + 1.5vw)";
+    tmp.style.backgroundColor = "#87D6E7";
+
+    // tmp.animation = "none";
   }
 
 }

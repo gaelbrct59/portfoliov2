@@ -116,22 +116,23 @@
 
 
 #checkBox-pres{
-  /* position: absolute; */
-  left: 0;
-  /* left: -30vw; */
-  /* margin-top:1vh; */
-  /* padding: 0vh 2px 1.3vh 2px; */
-  border-radius: 20px;
   display: flex;
-  width: 100vw;
+  flex-direction: row;
   padding-bottom: 60vh;
   padding-top: 8vh;
+  justify-content: center;
+}
+
+#checkBox-pres .checkBoxesWH{
+  width: calc(5px + 1.5vw);
+  height: calc(5px + 1.5vw);
+  border-radius: 2vw;
+  margin: calc(3px + 2vw);
 }
 
 @media (max-width: 600px){
   #checkBox-pres{
     padding-bottom: 240px;
-
   }
 }
 
@@ -147,15 +148,34 @@
   transition: 0.4s;
   cursor: pointer;
   outline : none;
+  overflow: hidden;
 }
 
-.checkBoxesWH:checked{
+
+@keyframes time {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.checkBoxesWH .timer{
+  position: relative;
+  width: 0;
+  height: 100%;
   background-color: #000;
+
 }
 
-.checkBoxesWH:hover{
-  transform: scale(1.1);
-background-color: #656563;
+/* #timerCkeck1{
+  -webkit-animation: time 9s steps(60);
+  animation: time 9s steps(60);
+} */
+
+ #checkBox-pres .checkBoxesWH:hover{
+  background-color: #656563;
 }
 
 
