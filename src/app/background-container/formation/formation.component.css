@@ -61,7 +61,7 @@
 }
 
 .point{
-  text-shadow:0 0 3px #000;
+  text-shadow:0 0 1px #000;
   color: #01016F;
 }
 
@@ -98,6 +98,30 @@
   margin-left: 30vw;
   font-size: calc(2vw + 12px);
 }
+
+.logo-formations{
+  margin-left: -100Vw;
+  width: 25vw;
+  position: absolute;
+
+}
+
+.formation .logo-formations{
+  /* -webkit-animation: appearLogoFormation 10s;
+  animation: appearLogoFormation 10s; */
+  animation-delay: calc(0.8s * var(--timer));
+}
+
+.appearLogoFormation{
+  animation: appearLogoFormation 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appearLogoFormation {
+  100%{
+    margin-left: 0;
+  }
+};
 
 @keyframes appearContenu {
   0%,60%{
