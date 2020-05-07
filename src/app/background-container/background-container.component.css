@@ -117,12 +117,14 @@
   height: 0.5px;
   background-color: #000;
   width: 0;
+  animation-delay: 0.3s;
+  margin: auto;
   animation-fill-mode: forwards;
   /* animation: tracer 1s; */
 }
 
 .tracer{
-  animation: tracerTraitMilieu 1s;
+  animation: tracerTraitMilieu 1.2s;
 }
 
 @keyframes appearWelcome {
