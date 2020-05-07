@@ -182,6 +182,11 @@ export class BackgroundContainerComponent implements OnInit {
     for (let i = 0; i < contenus.length; i++) {
       contenus[i].className += " appearContenu";
     }
+    var trait = document.getElementById("dessin-trait");
+    var point1 = document.getElementById("point1");
+    var point2 = document.getElementById("point2");
+    trait.style.height = point2.offsetTop - point1.offsetTop + point2.offsetHeight + "px";
+
 
     // document.getElementById("logoFormation").style.left = "2vw";
     // document.getElementById("logoDiplome").style.right = "30vw";

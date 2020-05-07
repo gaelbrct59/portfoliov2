@@ -13,7 +13,7 @@
 #formations {
   /* position: relative; */
   font-size:calc(5px + 1.5vw);
-  width: 100vw;
+  width: 95vw;
 }
 
 #formation{
@@ -46,6 +46,25 @@
 /* #formations{
   display: block;
 } */
+
+#dessin-trait{
+  position: absolute;
+  background-color: #01016F;
+  width: 1px;
+  height: 0;
+  transition: height 6s;
+  /* height: 230px; */
+  /* height: 100%;
+  left: 1vw;
+  width: 1px;
+  z-index: 9; */
+}
+
+.point{
+  text-shadow:0 0 3px #000;
+  color: #01016F;
+}
+
 .formation #date {
   overflow: hidden;
   margin-left: 20vw;
@@ -58,23 +77,23 @@
 
 @media (max-width: 500px){
   .formation{
-    margin-bottom: 45px;
+    margin-bottom: 55px;
   }
 }
 
 .formation #date h3{
   /* position: relative; */
   margin: 5vmin;
-  margin-top: -30vw;
-  animation-delay: calc(0.9s * var(--timer));
+  opacity: 0;
+  animation-delay: calc(0.8s * var(--timer));
   vertical-align: middle;
   color: #01016F;
-  font-size: calc(3vw + 21px);
+  font-size: calc(3vw + 15px);
 }
 
 .formation .formation-contenu{
   /* animation: appearContenu 3s; */
-  animation-delay: calc(0.9s * var(--timer));
+  animation-delay: calc(0.8s * var(--timer));
   opacity: 0;
   margin-left: 30vw;
   font-size: calc(2vw + 12px);
@@ -89,20 +108,24 @@
   }
 }
 
+
 .appearDate{
   animation: appearDate 1s;
   animation-fill-mode: forwards;
 }
 
 .appearContenu{
-  animation: appearContenu 2s;
+  animation: appearContenu 1.1s;
   animation-fill-mode: forwards;
 }
 
 
 @keyframes appearDate {
+  0%{
+    opacity: 0;
+  }
   100%{
-    margin-top: 0;
+    opacity: 1;
   }
 }
 
