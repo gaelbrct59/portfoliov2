@@ -210,7 +210,7 @@ export class BackgroundContainerComponent implements OnInit {
 
   animatePhrasePresentation(){
     document.getElementById("phrase-de-presentation").style.transition = "2.5s";
-    document.getElementById("phrase-de-presentation").style.top = "20vh";
+    document.getElementById("phrase-de-presentation").style.top = "calc(20vh - 25px)";
     document.getElementById("phrase-de-presentation").style.opacity = "1";
   }
 
