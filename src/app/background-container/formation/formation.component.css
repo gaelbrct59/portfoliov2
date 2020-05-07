@@ -104,6 +104,7 @@
   width: 22vw;
   position: absolute;
   max-height: 45vh;
+  filter: grayscale(100%);
 
 }
 
