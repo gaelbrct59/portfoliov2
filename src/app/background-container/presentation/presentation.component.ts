@@ -39,7 +39,7 @@ export class PresentationComponent implements OnInit {
 
     this.check(document.getElementsByClassName("checkBoxesWH")[0]);
     let timer1 = document.getElementsByClassName("timer")[0] as HTMLElement;
-    timer1.style.animation = "time 10s steps(1000)";
+    timer1.style.animation = "time 10s linear";
 
 
     this.timer = setInterval(() => {
@@ -49,7 +49,7 @@ export class PresentationComponent implements OnInit {
           increaseValue = "1";
         }
         this.changeCheck(increaseValue);
-        timers[parseInt(increaseValue) - 1].style.animation = "time 10s";
+        timers[parseInt(increaseValue) - 1].style.animation = "time 10s linear";
 
     }, 10000);
 
