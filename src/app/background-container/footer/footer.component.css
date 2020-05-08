@@ -1,16 +1,9 @@
 #container-footer{
   background-color: #1E2023;
   color: #FFF;
-  margin-top: -5vh;
   /* padding-bottom: 5vh; */
-  padding-top: 16vh;
 }
 
-@media (max-width: 600px){
-  #container-footer{
-    padding-top: 20%;
-  }
-}
 
 #footer-pres{
   position: relative;
@@ -20,9 +13,9 @@
 }
 
 #container-titre-footer{
-  margin-top: -7vh;
+  margin-top: -4vh;
+  display: inline-block;
   color: #C8D3DB;
-  position: absolute;
   border-bottom: solid;
   overflow: hidden;
 }

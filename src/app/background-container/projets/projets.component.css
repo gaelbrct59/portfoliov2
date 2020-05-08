@@ -13,6 +13,7 @@ h3{
   position: relative;
   font-size: calc(25px + 3vw);
   text-decoration: underline;
+  padding-top: calc(6vh + 15px);
 }
 
 #canvas{

@@ -8,7 +8,6 @@
   background-position: center;
   background-repeat: repeat-y;
   background-size: cover;
-  padding-top: 20vh;
 }
 #formations {
   /* position: relative; */
@@ -37,8 +36,8 @@
 
 #container-titre-formation{
   color: #FFF;
-  position: absolute;
   border-bottom: solid;
+  display: inline-block;
   overflow: hidden;
   z-index: 1;
 }
