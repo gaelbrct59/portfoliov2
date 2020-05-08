@@ -13,6 +13,7 @@ import { PresentationComponent } from './presentation/presentation.component';
 })
 export class BackgroundContainerComponent implements OnInit {
   value: string= '';
+  timer;
 
   background: HTMLElement;
 
@@ -32,9 +33,14 @@ export class BackgroundContainerComponent implements OnInit {
     this.value="active";
     this.background = document.getElementById("background");
     // document.getElementById("logoFormation").style.top = document.getElementById("formation-container").offsetTop + 'px';
+    this.timer = setInterval(() => {
+      this.charged();
+    }, 7000);
   }
-
+  
   charged(){
+    clearInterval(this.timer);
+
     document.getElementById("loader").className += "hidden";
 
     document.getElementById("welcome").className += "appear";
