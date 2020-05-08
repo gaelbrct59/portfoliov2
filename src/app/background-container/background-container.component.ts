@@ -14,6 +14,7 @@ import { PresentationComponent } from './presentation/presentation.component';
 export class BackgroundContainerComponent implements OnInit {
   value: string= '';
   timer;
+  isCharged: boolean = false;
 
   background: HTMLElement;
 
@@ -37,17 +38,21 @@ export class BackgroundContainerComponent implements OnInit {
       this.charged();
     }, 7000);
   }
-  
+
   charged(){
-    clearInterval(this.timer);
+    if (this.isCharged == false) {
+      this.isCharged = true;
+      clearInterval(this.timer);
 
-    document.getElementById("loader").className += "hidden";
+      document.getElementById("loader").className += "hidden";
 
-    document.getElementById("welcome").className += "appear";
-    document.getElementById("gael").className += "appear2";
-    document.getElementById("trait-milieu").className += "tracer";
+      document.getElementById("welcome").className += "appear";
+      document.getElementById("gael").className += "appear2";
+      document.getElementById("trait-milieu").className += "tracer";
 
-    document.getElementById("topbar-liens").className += "appearTopBar";
+      document.getElementById("topbar-liens").className += "appearTopBar";
+    }
+
   }
 
   scroll = (event):void => {
@@ -216,7 +221,7 @@ export class BackgroundContainerComponent implements OnInit {
 
   animatePhrasePresentation(){
     document.getElementById("phrase-de-presentation").style.transition = "2.5s";
-    document.getElementById("phrase-de-presentation").style.top = "calc(20vh - 25px)";
+    document.getElementById("phrase-de-presentation").style.top = "calc(21vh - 25px)";
     document.getElementById("phrase-de-presentation").style.opacity = "1";
   }
 
