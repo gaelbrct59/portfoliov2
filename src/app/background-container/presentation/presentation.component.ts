@@ -49,7 +49,7 @@ export class PresentationComponent implements OnInit {
           increaseValue = "1";
         }
         this.changeCheck(increaseValue);
-        timers[parseInt(increaseValue) - 1].style.animation = "time 10s steps(1000)";
+        timers[parseInt(increaseValue) - 1].style.animation = "time 10s";
 
     }, 10000);
 

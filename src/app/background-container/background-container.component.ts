@@ -14,7 +14,6 @@ import { PresentationComponent } from './presentation/presentation.component';
 export class BackgroundContainerComponent implements OnInit {
   value: string= '';
   timer;
-  isCharged: boolean = false;
 
   background: HTMLElement;
 
@@ -34,15 +33,15 @@ export class BackgroundContainerComponent implements OnInit {
     this.value="active";
     this.background = document.getElementById("background");
     this.timer = setInterval(() => {
-      if (this.isCharged == false) {
+      if (document.getElementById("loader").classList[0] != "hidden") {
         this.charged();
         window.removeEventListener("load", this.charged);
       }
     }, 7000);
   }
 
+
   charged(){
-      this.isCharged = true;
       clearInterval(this.timer);
 
       document.getElementById("loader").className += "hidden";
