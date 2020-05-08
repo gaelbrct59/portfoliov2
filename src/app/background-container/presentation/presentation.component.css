@@ -32,15 +32,14 @@
 #competence{
   position: relative;
   font-size: calc(15px + 3vw);
-  bottom: -50vh;
   height: 1ch;
-  /* animation: appear 2s; */
+  bottom: -50vh;
+  /* animation: appear 2s forwards; */
 }
 
 @keyframes appear {
   from{
     bottom: -50vh;
-
   }
   to{
     bottom: 0;
@@ -49,7 +48,8 @@
 
 #container-titre-comp{
   color: #000;
-  position: absolute;
+  display: inline-block;
+  /* position: absolute; */
   border-bottom: solid;
   overflow: hidden;
 }
@@ -115,7 +115,6 @@
 }
 
 #container-competences {
-  margin-top: calc(25vh - 40px);
   z-index: 3;
   margin-left: 10vw;
 }

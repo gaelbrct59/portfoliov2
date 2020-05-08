@@ -156,8 +156,7 @@ export class BackgroundContainerComponent implements OnInit {
   }
 
   animateComp(){
-    document.getElementById("competence").style.animation = "appear 2s";
-    document.getElementById("competence").style.bottom = "0";
+    document.getElementById("competence").style.animation = "appear 2s forwards";
 
     var contenusComp = document.getElementsByClassName("contenuComp") as HTMLCollectionOf<HTMLElement>;
     var rempl = document.getElementsByClassName("remplissage") as HTMLCollectionOf<HTMLElement>;
@@ -183,8 +182,7 @@ export class BackgroundContainerComponent implements OnInit {
 
 
   animateFormation(){
-    document.getElementById("formation").style.bottom = "0";
-    document.getElementById("formation").style.animation = "appear 2s";
+    document.getElementById("formation").style.animation = "appear 2s forwards";
 
     var dates = document.getElementsByTagName("h3") as HTMLCollectionOf<HTMLElement>;
     for (let i = 0; i < dates.length; i++) {
