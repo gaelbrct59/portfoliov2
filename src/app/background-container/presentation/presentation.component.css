@@ -1,21 +1,30 @@
-@media (max-width: 600px){
+/* @media (max-width: 600px){
   #checkBox-pres{
     padding-bottom: 240px;
   }
-}
+} */
 
 #phrase-de-presentation{
-  position: absolute;
+  /* position: absolute; */
   display: flex;
+  width: 700vw;
   flex-direction: row;
   top: 25vh;
   opacity:0;
   text-align: center;
-  padding-bottom: 1vh;
   font-size: calc(8.5px + 3vw);
-  /* font-weight: bold; */
   color: #656563;
   font-family: 'Optima', sans-serif;
+  margin-left: 10vw;
+}
+
+#phrase-de-presentation .pres{
+  /* position: relative; */
+  padding: 2vmin;
+  margin-right: 100vw;
+  width: 100vw;
+  border-radius: 10vmin;
+  height: 100%;
 }
 
 
@@ -46,15 +55,6 @@
 }
 
 
-
-#phrase-de-presentation .pres{
-  padding: 2vmin;
-  margin-right: 100vw;
-  width: 80vw;
-  border-radius: 10vmin;
-  height: 100%;
-
-}
 
 #barreProgressionVide{
   position: relative;
@@ -124,7 +124,7 @@
 #checkBox-pres{
   display: flex;
   flex-direction: row;
-  padding-bottom: 60vh;
+  /* padding-bottom: 60vh; */
   padding-top: 8vh;
   justify-content: center;
 }

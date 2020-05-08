@@ -10,16 +10,16 @@ import { DOCUMENT } from '@angular/common';
   animations: [
     trigger('switchPresentations', [
       state('1', style({
-          left:"6vw"
+          marginLeft:"10vw"
       })),
       state('2', style({
-          left:"-177vw"
+          marginLeft:"-163.5vw"
       })),
       state('3', style({
-          left:"-362vw"
+          marginLeft:"-339vw"
       })),
       state('4', style({
-          left:"-545vw"
+          marginLeft:"-513.5vw"
       })),
       transition('* <=> *', animate("400ms")),
 
