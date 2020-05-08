@@ -33,14 +33,15 @@ export class BackgroundContainerComponent implements OnInit {
     window.addEventListener('scroll', this.scroll, true);
     this.value="active";
     this.background = document.getElementById("background");
-    // document.getElementById("logoFormation").style.top = document.getElementById("formation-container").offsetTop + 'px';
     this.timer = setInterval(() => {
-      this.charged();
+      if (this.isCharged == false) {
+        this.charged();
+        window.removeEventListener("load", this.charged);
+      }
     }, 7000);
   }
 
   charged(){
-    if (this.isCharged == false) {
       this.isCharged = true;
       clearInterval(this.timer);
 
@@ -51,7 +52,6 @@ export class BackgroundContainerComponent implements OnInit {
       document.getElementById("trait-milieu").className += "tracer";
 
       document.getElementById("topbar-liens").className += "appearTopBar";
-    }
 
   }
 
