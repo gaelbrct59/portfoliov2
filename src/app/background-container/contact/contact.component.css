@@ -8,7 +8,6 @@
   background-repeat: repeat-y;
   background-size: cover;
   margin-top: -6vh;
-  padding-top: 25vh;
 }
 
 #contact{
@@ -30,8 +29,9 @@
 }
 
 #container-titre{
+  padding-top: 26px;
   color: #C8D3DB;
-  position: absolute;
+  display: inline-block;
   border-bottom: solid;
   overflow: hidden;
 }
