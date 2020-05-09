@@ -161,7 +161,7 @@
 
 #container-fleche-presentation{
   position: absolute;
-  bottom: 3.6vh;
+  bottom: -36vh;
   right: 2vw;
   width: 10vmin;
   height: 10vmin;
@@ -171,7 +171,7 @@
   cursor: pointer;
   transition: 0.4s;
   /* transform-origin: center; */
-
+  animation: 1s;
 
 }
 

@@ -52,6 +52,8 @@ export class BackgroundContainerComponent implements OnInit {
 
       document.getElementById("topbar-liens").className += "appearTopBar";
 
+      document.getElementById("container-fleche-presentation").style.bottom = "3.6vh";
+
   }
 
   scroll = (event):void => {
