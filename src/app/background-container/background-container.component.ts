@@ -24,7 +24,7 @@ export class BackgroundContainerComponent implements OnInit {
 
   ngOnInit(){
     if(document.documentElement.clientWidth < 400){
-      document.getElementById("flechePresentation").style.left = "10vw";
+      // document.getElementById("flechePresentation").style.left = "10vw";
     }
     // main();
     window.addEventListener("load", this.charged);
@@ -273,6 +273,13 @@ export class BackgroundContainerComponent implements OnInit {
     // document.getElementById("container-contact").style.top = + taillePage +'px';
     // document.getElementById("container-contact").style.backgroundPositionY = -+ taillePage*0.5 + 'px';
 
+  }
+
+  scrollToPresentation(){
+    window.scrollTo({
+      top: document.getElementById("presentation").offsetTop,
+      left:0
+    });
   }
 
 
