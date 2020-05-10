@@ -2,7 +2,7 @@
   position: relative;
   color: #656563;
   padding-bottom: 4vh;
-  margin-top: -46px;
+  margin-top: -66px;
 }
 
 h3{
@@ -11,9 +11,11 @@ h3{
 
 #projet{
   position: relative;
+  display: block;
   font-size: calc(25px + 3vw);
-  text-decoration: underline;
-  padding-top: calc(6vh + 15px);
+  padding-top: calc(6.5vh + 15px);
+  text-align: center;
+
 }
 
 #canvas{

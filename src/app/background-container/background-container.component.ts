@@ -139,11 +139,6 @@ export class BackgroundContainerComponent implements OnInit {
     document.getElementById("container-reseaux").style.opacity = "1";
   }
 
-  animateViaReseau(){
-
-  }
-
-
   animateProjets(){
     // document.getElementById("barre-projet").style.marginTop = "0";
     document.getElementById("barre-projet").style.opacity = "1";
