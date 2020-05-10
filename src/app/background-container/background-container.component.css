@@ -15,7 +15,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #447596;
+  background: rgb(0,16,97);
+  background: radial-gradient(circle, rgba(0,16,97,1) 0%, rgba(68,117,150,1) 100%);
   overscroll-behavior-y: contain;
   display: flex;
   align-items: center;

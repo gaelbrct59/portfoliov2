@@ -48,6 +48,7 @@ h3{
 
 .projet {
   /* animation: dispProjets 10s; */
+  position: relative;
   margin: 1vw;
   border: solid;
   border-radius: 20px;
@@ -85,24 +86,95 @@ h3{
   box-shadow: 1px 1px 6px 5px rgba(0,0,0,0.58);
 }
 
-.projet .titre-projet{
+.projet:hover > .presentation-projet{
+  top: 0;
+}
+
+#langages{
+  margin-top: calc(4.5px + 0.5vmin);
+  color: #E7ECEF;
+  text-decoration: underline;
+}
+
+
+.projet .presentation-projet{
+  position: absolute;
+  top: 70%;
+  background-color: rgba(31,42,135,0.7);
+  width: 100%;
+  height: 70%;
+  z-index: 2;
+  text-align: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 9px;
+  transition: 0.3s;
+}
+
+.projet .presentation-projet #titre-presentation-projet {
+  margin: auto;
+  margin-top: 10%;
+  opacity: 0;
+  width: 80%;
+  font-size: calc(2px + 4vmin);
+  transition: 0.4s;
+  transition-delay: 0.3s;
+}
+
+.projet:hover > .presentation-projet #titre-presentation-projet{
+  opacity: 1;
+}
+
+.projet .presentation-projet #trait-sep-pres-projet {
   position: relative;
+  height: 1px;
+  background-color: #FFF;
+  margin: auto;
+  margin-top: 1.5vmin;
+  margin-bottom: 1.5vmin;
+  width: 0;
+  transition: 0.4s;
+  transition-delay: 0.4s;
+}
+
+
+.projet:hover > .presentation-projet #trait-sep-pres-projet{
+  width: 100%;
+}
+
+.projet .presentation-projet #description-presentation-projet {
+  font-size: calc(5px + 1vmin);
+  width: 80%;
+  margin: auto;
+  margin-top: 60vmin;
+  transition: 0.4s;
+  transition-delay: 0.6s;
+}
+
+.projet:hover > .presentation-projet #description-presentation-projet{
+  margin-top: 2vmin;
+}
+
+.projet .titre-projet{
+  position: absolute;
   text-align: center;
   background-color: #1E2987;
   color: #E7ECEF;
-  font-size: calc(7px + 2vmin);
+  font-size: calc(6px + 1.5vmin);
   height: 30%;
+  top: 70%;
   z-index: 9;
   padding: 10px;
 }
 
 .projet img{
-  position: relative;
+  position: absolute;
   transition: 0.3s;
   height: 70%;
   width: 100%;
   transform: scale(1.05);
   filter: grayscale(100%);
+  z-index: 1;
 }
 
 .projet:hover > img {
