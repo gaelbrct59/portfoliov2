@@ -51,7 +51,7 @@
   background-color: #01016F;
   width: 1px;
   height: 0;
-  transition: height 4s cubic-bezier(1,.01,.71,.67) 1s;
+  transition: height 4s cubic-bezier(1,.01,.71,.67) 1.5s;
   /* height: 230px; */
   /* height: 100%;
   left: 1vw;
@@ -70,21 +70,12 @@
   display: block;
 }
 
-.formation{
-  margin-bottom: 15vh;
-}
-
-@media (max-width: 500px){
-  .formation{
-    margin-bottom: 55px;
-  }
-}
 
 .formation #date h3{
   /* position: relative; */
   margin: 5vmin;
   opacity: 0;
-  animation-delay: calc(0.8s * var(--timer));
+  animation-delay: calc(0.9s * var(--timer));
   vertical-align: middle;
   color: #01016F;
   font-size: calc(3vw + 15px);
@@ -92,7 +83,7 @@
 
 .formation .formation-contenu{
   /* animation: appearContenu 3s; */
-  animation-delay: calc(0.8s * var(--timer));
+  animation-delay: calc(0.9s * var(--timer));
   opacity: 0;
   margin-left: 30vw;
   font-size: calc(2vw + 12px);
@@ -110,11 +101,11 @@
 .formation .logo-formations{
   /* -webkit-animation: appearLogoFormation 10s;
   animation: appearLogoFormation 10s; */
-  animation-delay: calc(0.8s * var(--timer));
+  animation-delay: calc(0.9s * var(--timer));
 }
 
 .appearLogoFormation{
-  animation: appearLogoFormation 1s;
+  animation: appearLogoFormation 1.5s;
   animation-fill-mode: forwards;
 }
 
@@ -135,12 +126,12 @@
 
 
 .appearDate{
-  animation: appearDate 1s;
+  animation: appearDate 1.5s;
   animation-fill-mode: forwards;
 }
 
 .appearContenu{
-  animation: appearContenu 1.1s;
+  animation: appearContenu 1.67s;
   animation-fill-mode: forwards;
 }
 
