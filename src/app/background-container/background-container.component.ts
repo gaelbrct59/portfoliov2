@@ -104,12 +104,8 @@ export class BackgroundContainerComponent implements OnInit {
       this.animateGitLogo();
     }
 
-    if(taillePage > document.getElementById("container-contact").offsetTop) {
-      this.animateContact();
-    }
-
     if (taillePage > document.getElementById("via-reseau").offsetTop) {
-      this.animateViaReseau();
+      this.animateContact();
     }
 
     if(taillePage > document.getElementById("via-site").offsetTop) {
@@ -133,6 +129,9 @@ export class BackgroundContainerComponent implements OnInit {
     // document.getElementById("via-reseau").style.marginLeft = "5vw";
     // document.getElementById("via-reseau").style.opacity = "1";
 
+    document.getElementById("via-reseau").style.animation = "write 2s steps(17)"
+    document.getElementById("via-reseau").style.width = "15.5ch";
+
     document.getElementById("contact").style.animation = "appear 2s";
     document.getElementById("contact").style.bottom = "0";
 
@@ -141,8 +140,7 @@ export class BackgroundContainerComponent implements OnInit {
   }
 
   animateViaReseau(){
-    document.getElementById("via-reseau").style.animation = "write 2s steps(17)"
-    document.getElementById("via-reseau").style.width = "15.5ch";
+
   }
 
 
