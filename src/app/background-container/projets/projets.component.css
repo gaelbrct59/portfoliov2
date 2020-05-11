@@ -113,15 +113,16 @@ h3{
 
 .projet .presentation-projet #titre-presentation-projet {
   margin: auto;
-  margin-top: 10%;
+  margin-top: 2%;
   opacity: 0;
-  width: 80%;
-  font-size: calc(2px + 4vmin);
+  width: 95%;
+  font-size: calc(16px + 1vw);
   transition: 0.4s;
   transition-delay: 0.3s;
 }
 
 .projet:hover > .presentation-projet #titre-presentation-projet{
+  margin-top: 6%;
   opacity: 1;
 }
 
@@ -130,8 +131,8 @@ h3{
   height: 1px;
   background-color: #FFF;
   margin: auto;
-  margin-top: 1.5vmin;
-  margin-bottom: 1.5vmin;
+  margin-top: 2%;
+  margin-bottom: 2%;
   width: 0;
   transition: 0.4s;
   transition-delay: 0.4s;
@@ -139,11 +140,11 @@ h3{
 
 
 .projet:hover > .presentation-projet #trait-sep-pres-projet{
-  width: 100%;
+  width: 80%;
 }
 
 .projet .presentation-projet #description-presentation-projet {
-  font-size: calc(5px + 1vmin);
+  font-size: calc(8px + 0.2vw);
   width: 80%;
   margin: auto;
   margin-top: 60vmin;
