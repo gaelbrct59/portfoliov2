@@ -23,10 +23,7 @@ export class BackgroundContainerComponent implements OnInit {
 
 
   ngOnInit(){
-    if(document.documentElement.clientWidth < 400){
-      // document.getElementById("flechePresentation").style.left = "10vw";
-    }
-    // main();
+    
     window.addEventListener("load", this.charged);
 
     window.addEventListener('scroll', this.scroll, true);
