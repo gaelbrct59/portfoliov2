@@ -23,12 +23,17 @@ export class BackgroundContainerComponent implements OnInit {
 
 
   ngOnInit(){
-    
+
     window.addEventListener("load", this.charged);
 
     window.addEventListener('scroll', this.scroll, true);
     this.value="active";
     this.background = document.getElementById("background");
+
+    this.background.style.opacity = 0.80 - 0/600 + '' ;
+    this.background.style.top = + 0 +'px';
+    this.background.style.backgroundPositionY = -+ 0/4.5 + 'px';
+
     this.timer = setInterval(() => {
       if (document.getElementById("loader").classList[0] != "hidden") {
         this.charged();
