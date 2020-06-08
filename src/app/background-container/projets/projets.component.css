@@ -234,8 +234,9 @@ h3{
 } */
 
 .modal .close-modal{
-  position: fixed;
-  right: 15vw;
+  position: absolute;
+  right: 10vw;
+  top: 10vh;
   border: solid;
   border-radius: 50%;
   text-align: center;
