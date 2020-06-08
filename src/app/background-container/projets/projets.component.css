@@ -190,7 +190,7 @@ h3{
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: hidden; /* Enable scroll if needed */
+  overflow: auto; /* Enable scroll if needed */
   overscroll-behavior-y: contain;
 }
 
@@ -200,7 +200,6 @@ h3{
   padding: 3vmin;
   width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 15px;
-  max-height: 85vh;
   overflow: auto;
 }
 
@@ -235,7 +234,7 @@ h3{
 } */
 
 .modal .close-modal{
-  position: absolute;
+  position: fixed;
   right: 15vw;
   border: solid;
   border-radius: 50%;
