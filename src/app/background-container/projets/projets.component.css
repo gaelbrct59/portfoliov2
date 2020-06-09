@@ -234,9 +234,7 @@ h3{
 } */
 
 .modal .closemodal{
-  position: absolute;
-  right: 8vw;
-  top: 8vh;
+  float: right;
 }
 
 .close-modal-circle{
