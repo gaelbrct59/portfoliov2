@@ -233,34 +233,26 @@ h3{
   transition: 1s;
 } */
 
-.modal .close-modal{
+.modal .closemodal{
   position: absolute;
-  right: 10vw;
-  top: 10vh;
-  border: solid;
-  border-radius: 50%;
-  text-align: center;
-  justify-content: center;
-  height: 20px;
-  width: 20px;
-  padding: 1px;
-  font-weight: bold;
+  right: 8vw;
+  top: 8vh;
+}
+
+.close-modal-circle{
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  transition: 0.5s;
+}
+
+.modal .closemodal:hover .close-modal-circle{
+  stroke-dashoffset: 5;
+}
+
+.modal .closemodal{
   cursor: pointer;
-  background-color: #FFF;
-  transition: 0.4s;
-}
-.modal .close-modal #p{
-  transition:transform .8s ease-in-out;
 }
 
-.modal .close-modal:hover > #p{
-  transform: rotate(360deg);
-}
-
-.modal .close-modal:hover {
-  transform: scale(1.2);
-  color: #800000;
-}
 
 #barre-projet{
   position: relative;

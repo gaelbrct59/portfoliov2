@@ -22,7 +22,6 @@ export class ProjetsComponent implements OnInit {
     // document.getElementById("projets-cours").addEventListener("click", this.toggle, true);
     // document.getElementById("projets-tout").addEventListener("click", this.toggle, true);
 
-    // var closemodals = document.getElementsByClassName("close-modal");
     // for (let i = 0; i < closemodals.length; i++) {
     //   closemodals[i].addEventListener("click", this.closeModal, true);
     // }
@@ -53,7 +52,7 @@ export class ProjetsComponent implements OnInit {
   }
 
   closeModal(e){
-    if (e.target.className == "close-modal" || e.target.className == "modal" || e.target.className == "x") {
+    if (e.target.className.baseVal == "close-modal-circle" || e.target.className == "modal" || e.target.className.baseVal == "close-modal-cross") {
       var modals = document.getElementsByClassName("modal") as HTMLCollectionOf<HTMLElement>;
       for (let i = 0; i < modals.length; i++) {
         document.getElementById(modals[i].id).style.height = "0";
