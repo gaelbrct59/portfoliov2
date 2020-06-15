@@ -84,45 +84,52 @@ export class BackgroundContainerComponent implements OnInit {
     // }else{
     //   this.animateFooter();
     // }
+// ajouter une classe "animé" a l'objet
 
 
-    if (taillePage > document.getElementById("apppresentation").offsetTop) {
+    if (isVisible(document.getElementById("apppresentation"))) {
       this.animatePhrasePresentation();
     }
 
-    if (taillePage > document.getElementById("barreProgressionVide").offsetTop) {
+    if (isVisible(document.getElementById("barreProgressionVide"))) {
       this.animateComp();
     }
 
-    if (taillePage > document.getElementById("formations").offsetTop + 10) {
+    if (isVisible(document.getElementById("formations"))) {
       this.animateFormation();
     }
 
-    if (taillePage > document.getElementById("container-projets").offsetTop) {
+    if (isVisible(document.getElementById("container-projets"))) {
       this.animateProjets();
     }
 
-    if (taillePage > document.getElementById("pres-git").offsetTop + document.getElementById("container-projets").offsetTop){
-      this.animateGitLogo();
-    }
-
-    if (taillePage > document.getElementById("via-reseau").offsetTop) {
+    if (isVisible(document.getElementById("via-reseau"))) {
       this.animateContact();
     }
 
-    if(taillePage > document.getElementById("via-site").offsetTop) {
+    if(isVisible(document.getElementById("via-site"))) {
       this.animateViaSite();
     }
 
-    if (taillePage > document.getElementById("container-footer").offsetTop ){
+    if (isVisible(document.getElementById("container-footer"))){
       this.animateFooter();
     }
 
+    function isVisible(element){
+      if(window.pageYOffset > element.offsetTop && !element.classList.contains("animé")){
+          element.classList.add("animé");
+          return true;
+      }else{
+        return false;
+      }
+    }
 
 
   }
 
   animateViaSite(){
+
+
     document.getElementById("via-site").style.animation = "write 2s steps(17)"
     document.getElementById("via-site").style.width = "15ch";
   }
