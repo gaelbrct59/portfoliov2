@@ -15,12 +15,12 @@ export class Atom
       this.oldPosition = new Vector(0,0);
       this.oldVelocity = new Vector(0,0);
       this.color = "#1E2987";
-      this.colorSegment = "#87D6E7"
+      this.colorSegment = "#1E2987"
       this.alive = true;
       this.dirx = randInt(-2,3);
       this.diry = randInt(-2,3);
       this.neighbour = [];
-      this.diameterSegment = 250;
+      this.diameterSegment = 280;
       if (this.dirx == 0 && this.diry == 0){
         if(randInt(1,2) == 1){
           this.dirx = randInt(1,2);
@@ -118,9 +118,9 @@ export class AtomManager
     this.atoms=[];
     // console.log(document.documentElement.clientWidth);
     if(document.documentElement.clientWidth < 400){
-      this.nbAliveMax=10;
+      this.nbAliveMax=5;
     }else{
-      this.nbAliveMax=20;
+      this.nbAliveMax=10;
     }
     for(var i=0;i<this.nbAliveMax;++i) {
       this.atoms.push(new Atom());
