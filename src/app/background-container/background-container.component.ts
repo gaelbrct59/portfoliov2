@@ -107,9 +107,9 @@ export class BackgroundContainerComponent implements OnInit {
       this.animateContact();
     }
 
-    if(isVisible(document.getElementById("via-site"))) {
-      this.animateViaSite();
-    }
+    // if(isVisible(document.getElementById("via-site"))) {
+    //   this.animateViaSite();
+    // }
 
     if (isVisible(document.getElementById("container-footer"))){
       this.animateFooter();
