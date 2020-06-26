@@ -12,7 +12,7 @@ export class ProjetsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    if(document.documentElement.clientWidth > 300){ //Eviter les lags sur téléphone
+    if(document.documentElement.clientWidth > 400){ //Eviter les lags sur téléphone
       main();
     }
 
