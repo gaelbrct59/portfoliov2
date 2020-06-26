@@ -12,7 +12,9 @@ export class ProjetsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    main();
+    if(document.documentElement.clientWidth > 300){ //Eviter les lags sur téléphone
+      main();
+    }
 
     document.getElementById("projet-II2D").addEventListener("click", this.openlinkII2D, true);
     document.getElementById("projet-react").addEventListener("click", this.openlinkreact, true);

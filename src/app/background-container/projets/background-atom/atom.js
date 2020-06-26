@@ -117,11 +117,9 @@ export class AtomManager
   constructor() {
     this.atoms=[];
     // console.log(document.documentElement.clientWidth);
-    if(document.documentElement.clientWidth < 400){
-      this.nbAliveMax=5;
-    }else{
+
       this.nbAliveMax=10;
-    }
+    
     for(var i=0;i<this.nbAliveMax;++i) {
       this.atoms.push(new Atom());
     }
