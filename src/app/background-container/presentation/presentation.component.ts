@@ -56,40 +56,28 @@ export class PresentationComponent implements OnInit {
   }
 
   toggle1(){
-    // this.value="1";
+
     this.changeCheck("1");
     clearInterval(this.timer);
-    // this.checkBox2.checked=false;
-    // this.checkBox3.checked=false;
-    // this.checkBox4.checked=false;
+
   }
   toggle2(){
-    // this.value="2";
+
     this.changeCheck("2");
     clearInterval(this.timer);
 
-    // this.checkBox1.checked=false;
-    // this.checkBox3.checked=false;
-    // this.checkBox4.checked=false;
   }
   toggle3(){
-    // this.value="3";
+
     this.changeCheck("3");
     clearInterval(this.timer);
 
-    // this.checkBox1.checked=false;
-    // this.checkBox2.checked=false;
-    // this.checkBox4.checked=false;
   }
 
   toggle4(){
-    // this.value="4";
+
     this.changeCheck("4");
     clearInterval(this.timer);
-
-    // this.checkBox1.checked=false;
-    // this.checkBox2.checked=false;
-    // this.checkBox3.checked=false;
   }
 
   changeCheck(tmp){
