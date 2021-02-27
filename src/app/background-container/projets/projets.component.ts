@@ -43,6 +43,10 @@ export class ProjetsComponent implements OnInit {
     // document.getElementById("projet-react").style.display = "none";
   }
 
+  openlinkmealist(){
+    window.open("https://github.com/gaelbrct59/mealist");
+  }
+
   modalStage2018(){
     document.getElementById("modalStage2018").style.height = "90%";
     document.getElementById("modalStage2018").style.opacity = "1";
