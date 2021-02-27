@@ -21,6 +21,7 @@ export class ProjetsComponent implements OnInit {
     document.getElementById("stage2018").addEventListener("click", this.modalStage2018, true);
     document.getElementById("stage2017").addEventListener("click", this.modalStage2017, true);
     document.getElementById("barre-projet").addEventListener("click", this.toggle, true);
+    document.getElementById("appmealist").addEventListener("click", this.openlinkmealist, true);
     // document.getElementById("projets-cours").addEventListener("click", this.toggle, true);
     // document.getElementById("projets-tout").addEventListener("click", this.toggle, true);
 
